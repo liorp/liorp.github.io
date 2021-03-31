@@ -23,6 +23,12 @@ twitter_username: liorp
 github_username: liorpollak
 minimal_mistakes_skin: neon
 search: true
+analytics:
+  provider: google
+  google:
+    tracking_id: G-FBWMBFBB37
+    anonymize_ip: true
+
 
 # Build settings
 markdown: kramdown
