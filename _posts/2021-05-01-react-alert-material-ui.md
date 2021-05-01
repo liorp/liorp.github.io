@@ -109,7 +109,9 @@ export default AlertSnackbar;
 A few bullet points for this implementation:
 ⚫️ I used ```@ts-ignore```. Usually, this is a major warning sign, but I did this in order to
 bypass some typing definitions.
+<br/>
 ⚫️ The alert itself does not dismiss when a new one appears.
+<br/>
 ⚫️ The animation effect renders twice (resulting in a slight jittery animation), because of hooks change.
 
 The complete code is available [here][react-alert-snackbar-material-ui-example],
