@@ -107,6 +107,9 @@ const AlertSnackbar = ({message, options, close, style}: AlertComponentPropsWith
 export default AlertSnackbar;
 {% endhighlight %}
 
+Lo and behold (sped up 2x):
+![snackbar-alert](/assets/images/2021-05-01-react-alert-material-ui/snackbar-alert.gif)
+
 A few remarks for this implementation:<br>
 ⚫️ I used ```@ts-ignore```. Usually, this is a major warning sign, but I did this in order to
 bypass some typing definitions.
