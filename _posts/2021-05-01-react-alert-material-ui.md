@@ -66,7 +66,7 @@ and being lazy I chose to use a debugger statement; it could be done cleaner wit
 or just by looking at the types (yet in this case there's a small discrepancy, since the types
 don't mention a position property in options) 🥸
 
-So it turns out the component receives it's position, timeout and type in options:
+So it turns out the component receives its position, timeout and type in options:
 ![chrome-debugger-options](/assets/images/2021-05-01-react-alert-material-ui/chrome-debugger-options.png)
 And from here it's a matter of a few cuts 'n pastes to fine tune our component:
 {% highlight react linenos %}
