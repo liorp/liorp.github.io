@@ -17,16 +17,16 @@ I hope), I didn't seem to find any open source software to manage the hackathon 
 I decided to use the amazing library [react-alert][react-alert], which comes with a few built in themes 
 for displaying notifications.
 
-I tried to use the [basic template][react-alert-basic-template], but it doesn't have a typing declaration module necessary for typescript 🥲
-But one of them is named quite promisingly [react-alert-template-mui][react-alert-template-mui]!
-Yet it uses the dialog component from react material-ui, which is quite obtrusive. Behold:
-[react-alert-material-ui-obtrusive](/assets/images/2021-05-01-react-alert-material-ui/react-alert-material-ui-obtrusive.gif)
+I tried to use the [basic template][react-alert-basic-template], but it doesn't have a typing declaration module necessary for Typescript 🥲<br>
+But one of them is named quite promisingly [react-alert-template-mui][react-alert-template-mui]!<br>
+... Yet it uses the dialog component from react material-ui, which is quite obtrusive. Behold:
+![react-alert-material-ui-obtrusive](/assets/images/2021-05-01-react-alert-material-ui/react-alert-material-ui-obtrusive.gif)
 
 So what's more natural than to create a new material template, and to base it upon snackbars?
 
 I've started with creating a new react app, and installing material-ui and react-alert.
 Surprise! 
-[react-alert-force](/assets/images/2021-05-01-react-alert-material-ui/react-alert-force.png)
+![react-alert-force](/assets/images/2021-05-01-react-alert-material-ui/react-alert-force.png)
 We need to use ```npm i react-alert --force```. Oh well...
 
 🛠 Starting from a similiar code to the dialog component, but with snackbar:
@@ -61,13 +61,13 @@ const AlertSnackbar = ({id, message, options, close, style}: AlertComponentProps
 };
 {% endhighlight %}
 
-Wait! What is a ```debugger``` doing there? Well, I wanted to figure out the options I recieve in the component,
+Wait! What is a ```debugger``` doing there? Well, I wanted to figure out the options I receive in the component,
 and being lazy I chose to use a debugger statement; it could be done cleaner with a breakpoint,
 or just by looking at the types (yet in this case there's a small discrepancy, since the types
 don't mention a position property in options) 🥸
 
 So it turns out the component receives it's position, timeout and type in options:
-[chrome-debugger-options](/assets/images/2021-05-01-react-alert-material-ui/chrome-debugger-options.png)
+![chrome-debugger-options](/assets/images/2021-05-01-react-alert-material-ui/chrome-debugger-options.png)
 And from here it's a matter of a few cuts 'n pastes to fine tune our component:
 {% highlight react linenos %}
 import React from "react";
