@@ -16,6 +16,7 @@ I hope), I didn't seem to find any open source software to manage the hackathon 
 
 I decided to use the amazing library [react-alert][react-alert], which comes with a few built in themes 
 for displaying notifications.
+
 I tried to use the [basic template][react-alert-basic-template], but it doesn't have a typing declaration module necessary for typescript 🥲
 But one of them is named quite promisingly [react-alert-template-mui][react-alert-template-mui]!
 Yet it uses the dialog component from react material-ui, which is quite obtrusive. Behold:
@@ -106,7 +107,7 @@ const AlertSnackbar = ({message, options, close, style}: AlertComponentPropsWith
 export default AlertSnackbar;
 {% endhighlight %}
 
-A few bullet points for this implementation:
+A few remarks for this implementation:<br>
 ⚫️ I used ```@ts-ignore```. Usually, this is a major warning sign, but I did this in order to
 bypass some typing definitions.
 <br/>
@@ -118,11 +119,13 @@ The complete code is available [here][react-alert-snackbar-material-ui-example],
 and the npm package is available [here][react-alert-snackbar-material-ui-npm].
 
 
-I uploaded the package to npm using [np][https://zellwk.com/blog/publish-to-npm/]; note that [you can use][npx-vs-npm]
+I uploaded the package to npm using [np][np]; note that [you can use][npx-vs-npm]
 ```npx np```.
 
 [react-alert]: https://www.npmjs.com/package/react-alert
 [react-alert-basic-template]: https://github.com/schiehll/react-alert-template-basic
+[react-alert-template-mui]: https://github.com/mayyyc/react-alert-template-mui
 [react-alert-snackbar-material-ui-example]: https://github.com/liorp/react-alert-snackbar-material-ui-example
 [react-alert-snackbar-material-ui-npm]: https://www.npmjs.com/package/react-alert-template-snackbar-material-ui
-[npx-vs-npm]: https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/
+[np]: [https://zellwk.com/blog/publish-to-npm/]
+[npx-vs-npm]: [https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/]
