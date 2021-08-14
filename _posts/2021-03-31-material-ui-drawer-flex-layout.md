@@ -198,8 +198,7 @@ export default function PersistentDrawerLeft() {
 }
 {% endhighlight %}
 
-Wait! What is that? ```position="fixed"```? ```marginLeft: drawerWidth```? Why can't it be [flex][flex-csstricks]🤩?
-<br/>
+Wait! What is that? ```position="fixed"```? ```marginLeft: drawerWidth```? Why can't it be [flex][flex-csstricks]🤩?  
 Let's spice it up a little bit:
 
 {% highlight react linenos %}
@@ -250,10 +249,10 @@ Let's spice it up a little bit:
 >
 {% endhighlight %}
 
-The trick was to hide the *entire drawer*. But something in the animation is still not right: <br/>
-![side-menu-slow-animation](/assets/images/2021-03-31-material-ui-drawer-flex-layout/side-menu-slow-animation.gif)
-<br/>
-*That's because we are not animating the drawer!* <br/>
+The trick was to hide the *entire drawer*. But something in the animation is still not right:  
+![side-menu-slow-animation](/assets/images/2021-03-31-material-ui-drawer-flex-layout/side-menu-slow-animation.gif)  
+
+*That's because we are not animating the drawer!*  
 🛠 Let's add a transition to the drawer:
 {% highlight react linenos %}
 drawer: {

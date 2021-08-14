@@ -61,7 +61,8 @@ const AlertSnackbar = ({id, message, options, close, style}: AlertComponentProps
 };
 {% endhighlight %}
 
-Wait! What is a ```debugger``` doing there? Well, I wanted to figure out the options I receive in the component,
+Wait! What is a ```debugger``` doing there?  
+Well, I wanted to figure out the options I receive in the component,
 and being lazy I chose to use a debugger statement; it could be done cleaner with a breakpoint,
 or just by looking at the types (yet in this case there's a small discrepancy, since the types
 don't mention a position property in options) 🥸
@@ -110,12 +111,10 @@ export default AlertSnackbar;
 Lo and behold (sped up 2x):
 ![snackbar-alert](/assets/images/2021-05-01-react-alert-material-ui/snackbar-alert.gif)
 
-A few remarks for this implementation:<br>
+A few remarks for this implementation:  
 ⚫️ I used ```@ts-ignore```. Usually, this is a major warning sign, but I did this in order to
-bypass some typing definitions.
-<br/>
-⚫️ The alert itself does not dismiss when a new one appears.
-<br/>
+bypass some typing definitions.  
+⚫️ The alert itself does not dismiss when a new one appears.  
 ⚫️ The animation effect renders twice (resulting in a slight jittery animation), because of hooks change.
 
 The complete code is available [here][react-alert-snackbar-material-ui-example],
