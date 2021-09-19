@@ -94,6 +94,7 @@ Inspired by [this observation][asgavar-comment] by [@Asgavar][asgavar], it is po
 
 An example project can be found [here][quorum-queues-with-celery].
 
+Go ahead and tell me in the comments if it worked for you 🤠
 
 [celery]: https://docs.celeryproject.org/en/stable/
 [rabbitmq]: https://pypi.org/project/cryptography/
