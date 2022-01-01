@@ -1,5 +1,6 @@
 source "https://rubygems.org"
 
+gem "nokogiri", "~> 1.12.5"
 gem "github-pages", group: :jekyll_plugins
 
 gem "tzinfo-data"
@@ -14,6 +15,7 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem "jekyll-remote-theme"
 end
 
 gem "webrick", "~> 1.7"

@@ -80,6 +80,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/liorp"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/lior-pollak-0b039170"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/liorpollak"
@@ -92,6 +95,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/liorp"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/lior-pollak-0b039170"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/liorpollak"
@@ -128,3 +134,6 @@ comments:
     theme: "github-dark" 
     issue_term: "pathname"
     label: "comment"
+
+after_footer_scripts:
+  - /assets/js/cookie-consent.js
