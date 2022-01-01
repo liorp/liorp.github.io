@@ -1,5 +1,6 @@
 ---
 permalink: /terms/
+date: 2022-01-01T17:11:00+02:00
 title: "Terms and Privacy Policy"
 ---
 
