@@ -12,7 +12,7 @@ tags:
   - keybr
 ---
 
-> A computer mouse 🐭 (plural mice, sometimes mouses) is a hand-held pointing device that detects two-dimensional motion relative to a surface. This motion is typically translated into the motion of a pointer on a display, which allows a smooth control of the graphical user interface of a computer.
+> A computer mouse 🐭 (plural mice, sometimes mouses) is a hand-held pointing device that detects two-dimensional motion relative to a surface. This motion is typically translated into the motion of a pointer on a display, which allows a smooth control of the graphical user interface of a computer.  
 ~ [Wikipedia][computer-mouse-wiki] (except for the emoji part, that's on me)
 
 Wow, it's been a long time since the mouse first appeared in 1968.  
