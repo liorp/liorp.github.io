@@ -10,7 +10,7 @@ window.cookieconsent.initialise({
     "type": "opt-in",
     "content": {
       "message": "I use cookies to gain important analytic info in order to provide you with the best experience possible 🥰",
-      "href": "https://liorp.github.io/terms/"
+      "href": "https://blog.liorp.dev/terms/"
     },
     onInitialise: function (status) {
         var type = this.options.type;
