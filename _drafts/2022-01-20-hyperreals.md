@@ -48,5 +48,8 @@ And that, in a very general manner that is not quite accurate or precise, is why
 
 It's actually quite nice to know that all of the tricks in physics regarding "inifinitly small" mass (or length, or time) can be thought about as infinitesimal calculus!
 
+This post was partially supported by [@WalachEyal], and I'd like to thank him for his support.
 
 [^1]: And perhaps 1821, when Cauchy discussed limits, and defined continuity by saying that an infinitesimal change in x necessarily produces an infinitesimal change in y. 
+
+[@WalachEyal]: https://twitter.com/walacheyal
