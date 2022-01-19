@@ -1,6 +1,6 @@
 ---
 title: "Handling Errors in Celery"
-date: 2022-01-09T17:11:00+02:00
+date: 2022-01-19T17:11:00+02:00
 categories:
   - blog
 tags:
@@ -12,7 +12,7 @@ tags:
 ---
 
 Error handling is one of the most important features a framework can offer in order to have a great DX.  
-Some of the implementations can be a really bad DX (I'm looking at you, JS 👀) or they can be really fun, like in Celery.
+Some of the implementations can be a really bad DX 👀, or they can be really fun, like in Celery.  
 You see, there are two things that can go wrong when you send a task to a Celery worker:
 
 1. Connection issues with the broker and Message Queue.

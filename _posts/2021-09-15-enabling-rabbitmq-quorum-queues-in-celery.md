@@ -18,7 +18,7 @@ You have publishers that publish tasks, subscribers that consume messages, and a
 This is called work queues, as illustrated here (one publisher and many consumers, from RabbitMQ's official docs):  
 
 <figure class="align-left">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2021-09-15-enabling-rabbitmq-quorum-queues-in-celery/rabbitmq-work-queue.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2021-09-15-enabling-rabbitmq-quorum-queues-in-celery/rabbitmq-work-queue.png" alt="RabbitMQ work queues">
   <figcaption>RabbitMQ work queues</figcaption>
 </figure> 
 
@@ -56,7 +56,7 @@ If you follow the celery instructions and naively define a queue with type quoru
 
 
 <figure class="align-left">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2021-09-15-enabling-rabbitmq-quorum-queues-in-celery/celery-global-qos-error.png" alt="">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2021-09-15-enabling-rabbitmq-quorum-queues-in-celery/celery-global-qos-error.png" alt="Getting a really nasty error when forcing queue_arguments={"x-queue-type": "quorum"}">
   <figcaption>Getting a really nasty error when forcing queue_arguments={"x-queue-type": "quorum"}</figcaption>
 </figure> 
 
