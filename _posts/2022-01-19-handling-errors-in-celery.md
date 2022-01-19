@@ -62,9 +62,7 @@ This way, if a worker crashes, the message will still be in the queue.
 
 This post is adapted from an [answer][answer] I wrote on stackoverflow.
 
-[^1]: Though I admit that sometimes I mishap and look on the keyboard, and when I do that, I'm looking at you, "\|" 🙄
-[^2]: Shout out to stackoverflow!
 [Celery docs]: https://docs.celeryproject.org/en/latest/userguide/calling.html#retry-policy
-[autoretry][autoretry]: https://coderbook.com/@marcus/how-to-automatically-retry-failed-tasks-with-celery/
-[Automatic retry for known exceptions][Automatic retry for known exceptions]: https://docs.celeryproject.org/en/stable/userguide/tasks.html#Task.retry_backoff
-[answer][answer]: https://stackoverflow.com/a/70391418/938227
+[autoretry]: https://coderbook.com/@marcus/how-to-automatically-retry-failed-tasks-with-celery/
+[Automatic retry for known exceptions]: https://docs.celeryproject.org/en/stable/userguide/tasks.html#Task.retry_backoff
+[answer]: https://stackoverflow.com/a/70391418/938227

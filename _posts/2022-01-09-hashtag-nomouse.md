@@ -45,6 +45,7 @@ Tell me in the comments which key is your favorite - mine is the number 6!
 
 [^1]: Though I admit that sometimes I mishap and look on the keyboard, and when I do that, I'm looking at you, "\|" 🙄
 [^2]: Shout out to stackoverflow!
+
 [vim]: https://www.vim.org
 [computer-mouse-wiki]: https://en.wikipedia.org/wiki/Computer_mouse
 [keybr]: https://www.keybr.com

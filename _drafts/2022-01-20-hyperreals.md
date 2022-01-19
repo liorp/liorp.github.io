@@ -29,12 +29,14 @@ It wasn't until 1861[^1], when Weierstrass first introduced the epsilon-delta de
 
 As I majored in math, I've had my share of courses in calculus and in set theory, and yet this chapter managed to delight me with one particular method of formalising infinitisemal calculus, which is the hyperreals.
 
-But what are exactly hyperreals? they are a way of treating infinite and infinitesimal quantities. They can be though as an extension of the real numbers R that contains numbers that are smaller than any real number, and numbers that are bigger than any other real number.
+But what are exactly hyperreals? they are a way of treating infinite and infinitesimal quantities. They can be thought as an extension of the real numbers R that contains numbers that are smaller than any real number, and numbers that are bigger than any other real number.
 
 In the 1960s, Abraham Robinson proved that the hyperreals were logically consistent if and only if the reals were. The book elaborates upon a beautiful proof for this claim, which I will try to reconstruct here.
 
-Before we begin, note that by introducing a quantity $$\epsilon$$ that is smaller than any other number, we can actually rephrase that as infinite claims of the type:  
+Before we begin, note that by introducing a quantity $$\epsilon$$ that is smaller than any other number.
+We can actually rephrase that claim as infinite axioms of the type:  
 $$ \epsilon \leq x$$, where $$x$$ is a real number.
+That way, the axioms of the hyperreals are the same axioms of the reals, with the addition of this $$\epsilon$$ creature.
 
 Now, say we have a proof in the hyperreals that comes to a contradiction. It can be comprised of many (but finite) axioms of the hyperreals, and some corollaries that follow.  
 The fun part here is to notice that we are interested in the axioms: specifically, the axioms that regard $$\epsilon$$.  
