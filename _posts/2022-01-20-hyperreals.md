@@ -1,6 +1,6 @@
 ---
 title: "A short journey to a hyperreal space"
-date: 2022-01-19T13:20:00+02:00
+date: 2022-01-20T13:20:00+02:00
 categories:
   - blog
 tags:
@@ -34,6 +34,11 @@ They can be thought as an extension of the real numbers R that contains numbers 
 
 In the 1960s, Abraham Robinson proved that the hyperreals were logically consistent if and only if the reals were. The book elaborates upon a beautiful proof for this claim, which I will try to reconstruct here.
 
+<figure class="align-right">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2022-01-20-hyperreals/robinson_abraham_1970.jpg" style="max-width:280px;" alt="Einstein walking with Gödel (Getty Images)">
+  <figcaption>Abraham Robinson, 1970<br/>(Konrad Jacobs)</figcaption>
+</figure> 
+
 We begin by introducing a quantity $$\epsilon$$ that is smaller than any other number.
 We can actually rephrase that claim as infinite axioms of the type:  
 $$ \epsilon \leq x$$, where $$x$$ is a real number.
@@ -47,7 +52,7 @@ Now consider the same arguments, only that we substitute $$ \epsilon $$ with $$ 
 So, what do we have here? We have (possibly a lot of) arguments about ye good ol' real numbers, that end in contradiction - so there must be a logical fallacy in the arguments!
 
 And that, in a very general manner that is not quite accurate or precise, is why the hyperreals are a legitimate way of performing calculus.
-It's actually quite nice to know that all of the tricks in physics regarding "inifinitly small" mass (or length, or time) can be thought about as infinitesimal calculus!
+It's actually quite nice to know that all of the tricks in physics regarding "inifinitely small" mass (or length, or time) can be thought about as infinitesimal calculus!
 
 This post was partially supported by [@WalachEyal], and I'd like to thank him for his support.
 
