@@ -39,6 +39,8 @@ In the 1960s, Abraham Robinson proved that the hyperreals were logically consist
   <figcaption>Abraham Robinson, 1970<br/>(Konrad Jacobs)</figcaption>
 </figure> 
 
+---
+
 We begin by introducing a quantity $$\epsilon$$ that is smaller than any other number.
 We can actually rephrase that claim as infinite axioms of the type:  
 $$ \epsilon \leq x$$, where $$x$$ is a real number.
