@@ -10,9 +10,9 @@ tags:
 
 I love books. And I also love math.  
 That's probably why I couldn't lay my hands off a book named "When Einstein Walked With Gödel: Excursions to the Edge of Thought" by Jim Holt.  
-The book is collection of essays on many diverse themes as science and philosophy; it also explores the works of prominent scientists such as Einstein and Turing.
+The book is a collection of essays on many diverse themes such as science and philosophy; it also explores the works of prominent scientists such as Einstein and Turing.
 
-One chapter that struck me with a great awe discusses the idea of infinity, and it's implementation in calculus. 
+One chapter that struck me with a great awe discusses the idea of infinity, and its implementation in calculus. 
 
 <figure class="align-left">
   <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2022-01-20-hyperreals/einstein_godel.jpg" style="max-width:280px;" alt="Einstein walking with Gödel (Getty Images)">
@@ -30,7 +30,7 @@ It wasn't until 1861[^1], when Weierstrass first introduced the epsilon-delta de
 As I majored in math, I've had my share of courses in calculus and in set theory, and even yet, this chapter managed to delight me with one particular method of formalising infinitisemal calculus - the *hyperreals*.
 
 But what are exactly hyperreals? They are a way of treating infinite and infinitesimal quantities.  
-They can be thought as an extension of the real numbers R that contains numbers that are smaller than any real number, and numbers that are bigger than any other real number.
+They can be thought of as an extension of the real numbers R that contains numbers that are smaller than any real number, and numbers that are bigger than any other real number.
 
 In the 1960s, Abraham Robinson proved that the hyperreals were logically consistent if and only if the reals were. The book elaborates upon a beautiful proof for this claim, which I will try to reconstruct here.
 
