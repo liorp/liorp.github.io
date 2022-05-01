@@ -51,12 +51,12 @@ Quorum Queues are based on a consensus algorithm named [Raft][raft], and they ar
 🪓 RabbitMQ even says that Mirrored Queues will be removed in a future release 🪓
 
 At this point you're probably saying to yourself: "You got me big L, I want to have quorum queues!"  
-Well, apparently [they are not supported out of the box][celery-quorum-ticket] in celery atm (September 2021).  
+Well, apparently [they are not supported out of the box][celery-quorum-ticket] in celery (September 2021, update: May 2022).  
 If you follow the celery instructions and naively define a queue with type quorum, you'll actually get an `amqp.exceptions.AMQPNotImplementedError: Basic.consume: (540) NOT_IMPLEMENTED - queue 'add_queue' in vhost '/' does not support global qos` 😵
 
 
 <figure class="align-left">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2021-09-15-enabling-rabbitmq-quorum-queues-in-celery/celery-global-qos-error.png" alt="Getting a really nasty error when forcing queue_arguments={"x-queue-type": "quorum"}">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2021-09-15-enabling-rabbitmq-quorum-queues-in-celery/celery-global-qos-error.png" alt='Getting a really nasty error when forcing queue_arguments={"x-queue-type": "quorum"}'>
   <figcaption>Getting a really nasty error when forcing queue_arguments={"x-queue-type": "quorum"}</figcaption>
 </figure> 
 
@@ -69,12 +69,14 @@ But... you can still have them.
 By hooking into the bootsteps of the celery worker, you can force it to have a per-consumer QoS, in this manner: 
 {% highlight python linenos %}
 class NoChannelGlobalQoS(bootsteps.StartStopStep):
-    requires = {'celery.worker.consumer.tasks:Tasks'}
+    requires = {'celery.worker.consumer.tasks:Tasks'}  # Required for the step to be run after Tasks has been run
 
     def start(self, c):
+        # In this context, `c` is the consumer (celery worker)
         qos_global = False
 
         # This is where we enforce per-client QoS, the rest is just copypaste from celery
+        # Note that we set to prefetching size to be 0, so the exact value of `c.initial_prefetch_count` is not important
         c.connection.default_channel.basic_qos(
             0, c.initial_prefetch_count, qos_global,
         )
@@ -96,6 +98,8 @@ An example project can be found [here][quorum-queues-with-celery].
 
 Go ahead and tell me in the comments if it worked for you 🤠
 
+UPDATE [01.05.2022]: Thanks to [Ilai Shai][ilsh] for several refinments to the celery code.
+
 [celery]: https://docs.celeryproject.org/en/stable/
 [rabbitmq]: https://pypi.org/project/cryptography/
 [rabbitmq-mirrored-queues]: https://www.rabbitmq.com/ha.html
@@ -105,3 +109,4 @@ Go ahead and tell me in the comments if it worked for you 🤠
 [asgavar]: https://github.com/Asgavar
 [asgavar-comment]: https://github.com/celery/celery/issues/6067#issuecomment-724001426
 [quorum-queues-with-celery]: https://github.com/liorp/quorum_queues_with_celery
+[ilsh]: https://www.linkedin.com/in/ilai-shai
