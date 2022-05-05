@@ -15,7 +15,7 @@ The book is a collection of essays on many diverse themes such as science and ph
 One chapter that struck me with a great awe discusses the idea of infinity, and its implementation in calculus. 
 
 <figure class="align-left">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2022-01-20-hyperreals/einstein_godel.jpg" style="max-width:280px;" alt="Einstein walking with Gödel (Getty Images)">
+  <img src="/assets/images/2022-01-20-hyperreals/einstein_godel.jpg" style="max-width:280px;" alt="Einstein walking with Gödel (Getty Images)">
   <figcaption>Einstein walking with Gödel<br/>(Getty Images)</figcaption>
 </figure> 
 
@@ -35,7 +35,7 @@ They can be thought of as an extension of the real numbers R that contains numbe
 In the 1960s, Abraham Robinson proved that the hyperreals were logically consistent if and only if the reals were. The book elaborates upon a beautiful proof for this claim, which I will try to reconstruct here.
 
 <figure class="align-right">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2022-01-20-hyperreals/robinson_abraham_1970.jpg" style="max-width:280px;" alt="Einstein walking with Gödel (Getty Images)">
+  <img src="/assets/images/2022-01-20-hyperreals/robinson_abraham_1970.jpg" style="max-width:280px;" alt="Einstein walking with Gödel (Getty Images)">
   <figcaption>Abraham Robinson, 1970<br/>(Konrad Jacobs)</figcaption>
 </figure> 
 

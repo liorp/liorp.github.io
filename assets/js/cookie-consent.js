@@ -7,9 +7,9 @@ window.cookieconsent.initialise({
         "background": "#f1d600"
       }
     },
-    "type": "opt-in",
+    "type": "opt-out",
     "content": {
-      "message": "I use cookies to gain important analytic info in order to provide you with the best experience possible 🥰",
+      "message": "I use cookies to gain important analytic info in order to provide you with the best experience possible, and by using this website you agree to the cookie policy 🥰",
       "href": "https://blog.liorp.dev/terms/"
     },
     onInitialise: function (status) {
