@@ -1,13 +1,11 @@
 ---
 permalink: /terms/
-date: 2022-01-01T17:11:00+02:00
+date: 2022-05-06T17:11:00+02:00
 title: "Terms and Privacy Policy"
 ---
 
 ## Privacy Policy
 I take your privacy very seriously. This short document outlines the types of personal data that is received or collected, and how it may be used.
-
-*No evil here - I will **never** share your personal information without your direct consent.*
 
 ## Logs
 Like many other places on the web, I use logs to answer some important wh questions about traffic flows here. The information includes:
