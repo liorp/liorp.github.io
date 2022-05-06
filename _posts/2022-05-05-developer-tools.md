@@ -38,7 +38,7 @@ If you really can’t find what you're looking for, code it and call it a startu
 
 ## Some useful tools
 
-* [fly.io][flyio] for deploying apps
+* [render][render] for deploying apps
 * [ngrok] domain for testing
 * [nutjs] for automations 
 * [LICEcap][licecap] for screen recording gif
@@ -55,8 +55,8 @@ If you really can’t find what you're looking for, code it and call it a startu
 [comments-post]: https://blog.codinghorror.com/code-tells-you-how-comments-tell-you-why/
 [comments-tips]: https://stackoverflow.blog/2021/12/23/best-practices-for-writing-code-comments/
 [github]: https://www.github.com
-[flyio]: https://fly.io
 [ngrok]: https://ngrok.com
 [nutjs]: https://nutjs.dev
 [licecap]: https://www.cockos.com/licecap/
-[figma]: https://www.figma.com]
+[figma]: https://www.figma.com
+[render]: https://render.com
