@@ -28,6 +28,12 @@ If you wish to disable cookies, you may do so through your web browser options. 
 
 ## Google Analytics
 I use Google Analytics. If you're already here, I suppose you know why, but just in case you haven't heard of 
-Google - it helps me to understand how visitors engage. It reports website trends using cookies and web beacons without identifying individual visitors. For more information you can read the [Google Analytics Privacy Policy][google-analytics-privacy-policy].
+Google - it helps me to understand how visitors engage. It reports website trends using cookies and web beacons without identifying individual visitors.  
+For more information you can read the [Google Analytics Privacy Policy][google-analytics-privacy-policy].
+
+## Google AdSense
+I use Google AdSense, since this website ain't gonna pay for itself. The Google AdSense service uses a DoubleClick cookie to serve more relevant ads across the web and limit the number of times that a given ad is shown to you.  
+For more information you can read the [Google AdSense Privacy Policy][google-adsense-privacy-policy].
 
 [google-analytics-privacy-policy]: https://policies.google.com/technologies/partner-sites
+[google-adsense-privacy-policy]: https://policies.google.com/technologies/ads
