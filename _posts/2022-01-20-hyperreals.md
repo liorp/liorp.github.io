@@ -8,6 +8,9 @@ tags:
   - hyperreal
 ---
 
+When taking an infinitely small trip lasts forever
+{: .page__subtitle}
+
 I love books. And I also love math.  
 That's probably why I couldn't lay my hands off a book named "When Einstein Walked With Gödel: Excursions to the Edge of Thought" by Jim Holt.  
 The book is a collection of essays on many diverse themes such as science and philosophy; it also explores the works of prominent scientists such as Einstein and Turing.

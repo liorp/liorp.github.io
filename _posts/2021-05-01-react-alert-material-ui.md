@@ -8,6 +8,9 @@ tags:
   - material-ui
 ---
 
+Making a theme for react alert
+{: .page__subtitle}
+
 Recently I've decided to design a hackathon from A to Z.
 
 Beside from creating the stages themselves (which I will delve into details in another blog post,

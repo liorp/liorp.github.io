@@ -11,6 +11,9 @@ tags:
   - queue
 ---
 
+How to brace for failure in celery tasks
+{: .page__subtitle}
+
 Error handling is one of the most important features a framework can offer in order to have a great DX.  
 Some of the implementations can be a really bad DX 👀, or they can be really fun, like in Celery.  
 You see, there are two things that can go wrong when you send a task to a Celery worker:

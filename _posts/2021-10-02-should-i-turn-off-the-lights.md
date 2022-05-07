@@ -11,6 +11,8 @@ tags:
   - light
 ---
 
+Before there was light, darkness was over the surface of the deep
+{: .page__subtitle}
 ## Let there be light 💡
 As a kid, I learned a lot of environmental studies in my school (shout out to ["An Inconvenient Truth"][an-inconvenient-truth]).  
 I can remember many classes watching old movies on VCR, and building models of the Earth, calculating naive calculations about energy efficiency and species extinctions.  

@@ -5,7 +5,11 @@
 @charset "utf-8";
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+
+$sans-serif: Poppins, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+
 @import "minimal-mistakes"; // main partials
+
 .highlight {
     background: rgb(230, 230, 230);
     max-height: 300px;
@@ -18,4 +22,11 @@
       overflow-x: unset;
     }
   }
+}
+
+.page__subtitle{
+  border-bottom: 1px solid $light-gray;
+  font-size: $type-size-5;
+  color: $gray;
+  padding-bottom: $type-size-5;
 }

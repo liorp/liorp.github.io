@@ -13,6 +13,9 @@ tags:
   - drf
 ---
 
+Designing a hackathon system
+{: .page__subtitle}
+
 Recently I've decided to design a hackathon from A to Z.
 
 Beside from creating the stages themselves (which I will delve into details in another blog post,

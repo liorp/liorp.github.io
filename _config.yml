@@ -21,7 +21,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Some python, js, react, django, fullstack, and the occasional math and science.
 twitter_username: liorp
 github_username: liorpollak
-minimal_mistakes_skin: neon
+minimal_mistakes_skin: sunrise
 search: true
 analytics:
   provider: google
@@ -111,6 +111,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
+      show_date: true
       comments: true
       share: true
       related: true

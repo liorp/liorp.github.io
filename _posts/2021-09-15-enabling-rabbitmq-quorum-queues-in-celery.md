@@ -12,6 +12,8 @@ tags:
   - microservice
 ---
 
+What to do when your rabbit doesn't want to eat its veggies
+{: .page__subtitle}
 ### Intro
 When I was first introduced to the concept of parallel work, I was told the following explanation:  
 You have publishers that publish tasks, subscribers that consume messages, and a broker mechanism that is responsible to suck in the tasks from the publishers and send them to subscribers that will actually perform the tasks, optionally returning an answer to the publishers.  

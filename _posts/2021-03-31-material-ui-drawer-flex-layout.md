@@ -9,6 +9,9 @@ tags:
   - flex
 ---
 
+Getting flexy with it
+{: .page__subtitle}
+
 Hello, world! 
 For this first post, I'm going to write a few words about laying out SPAs with [Material-UI][material-ui].
 
