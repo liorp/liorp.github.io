@@ -43,7 +43,7 @@ If you really can’t find what you're looking for, code it and call it a startu
 * [nutjs] for automations 
 * [LICEcap][licecap] for screen recording gif
 * [Figma][figma] for design
-* [microbundle][microbundle] for creating (small) react components
+* [tsup][tsup] for creating (small) react components
 * [np][np] for publishing npm packages
 
 [^1]: A great stack-overflow [blog post][comments-tips] about writing comments, and the mythical [Code Tells You How, Comments Tell You Why][comments-post].
@@ -62,5 +62,5 @@ If you really can’t find what you're looking for, code it and call it a startu
 [licecap]: https://www.cockos.com/licecap/
 [figma]: https://www.figma.com
 [render]: https://render.com
-[microbundle]: https://github.com/developit/microbundle
+[tsup]: https://github.com/egoist/tsup
 [np]: https://github.com/sindresorhus/np
