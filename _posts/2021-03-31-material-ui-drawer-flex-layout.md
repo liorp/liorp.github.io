@@ -7,16 +7,15 @@ tags:
   - react
   - material-ui
   - flex
+excerpt: "Getting flexy with it"
 ---
-
-Getting flexy with it
-{: .page__subtitle}
 
 Hello, world! 
 For this first post, I'm going to write a few words about laying out SPAs with [Material-UI][material-ui].
 
 We start by taking their example:
 {% highlight react linenos %}
+{% raw %}
 import React from 'react';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -199,6 +198,7 @@ export default function PersistentDrawerLeft() {
     </div>
   );
 }
+{% endraw %}
 {% endhighlight %}
 
 Wait! What is that? ```position="fixed"```? ```marginLeft: drawerWidth```? Why can't it be [flex][flex-csstricks]🤩?  
@@ -241,6 +241,7 @@ Let's spice it up a little bit:
 {% endhighlight %}
 
 {% highlight react linenos %}
+{% raw %}
 <Drawer
     className={clsx(classes.drawer, !open && classes.drawerCollapsed)}
     variant="persistent"
@@ -250,6 +251,7 @@ Let's spice it up a little bit:
       paper: classes.drawerPaper,
     }}
 >
+{% endraw %}
 {% endhighlight %}
 
 The trick was to hide the *entire drawer*. But something in the animation is still not right:  

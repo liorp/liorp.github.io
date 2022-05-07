@@ -6,10 +6,8 @@ categories:
 tags:
   - react-alert
   - material-ui
+excerpt: "Making a theme for react alert"
 ---
-
-Making a theme for react alert
-{: .page__subtitle}
 
 Recently I've decided to design a hackathon from A to Z.
 
@@ -34,6 +32,7 @@ We need to use ```npm i react-alert --force```. Oh well...
 
 🛠 Starting from a similiar code to the dialog component, but with snackbar:
 {% highlight react linenos %}
+{% raw %}
 import React from "react";
 import Snackbar from "@material-ui/core/Snackbar";
 import Button from "@material-ui/core/Button";
@@ -62,6 +61,7 @@ const AlertSnackbar = ({id, message, options, close, style}: AlertComponentProps
         />
     );
 };
+{% endraw %}
 {% endhighlight %}
 
 Wait! What is a ```debugger``` doing there?  
@@ -74,6 +74,7 @@ So it turns out the component receives its position, timeout and type in options
 ![chrome-debugger-options](/assets/images/2021-05-01-react-alert-material-ui/chrome-debugger-options.png)
 And from here it's a matter of a few cuts 'n pastes to fine tune our component:
 {% highlight react linenos %}
+{% raw %}
 import React from "react";
 import Snackbar from "@material-ui/core/Snackbar";
 import {AlertComponentPropsWithStyle} from "react-alert";
@@ -109,6 +110,7 @@ const AlertSnackbar = ({message, options, close, style}: AlertComponentPropsWith
 };
 
 export default AlertSnackbar;
+{% endraw %}
 {% endhighlight %}
 
 Lo and behold (sped up 2x):

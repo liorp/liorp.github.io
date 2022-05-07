@@ -13,10 +13,8 @@ tags:
   - onmouseleave
   - onmouseout
   - onmouseover
+excerpt: "Of mouse and events"
 ---
-
-Of mouse and events
-{: .page__subtitle}
 
 Recently I've had a nasty issue regarding an autocomplete component that refused to render its options properly.  
 When you hovered on the component, it flickered like NYE fireworks in Times Square 🎆  

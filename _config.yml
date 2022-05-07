@@ -29,6 +29,7 @@ analytics:
     tracking_id: UA-193470211-1
     anonymize_ip: true
 encoding: utf-8
+github: [metadata]
 
 # Build settings
 markdown: kramdown
@@ -116,6 +117,8 @@ defaults:
       share: true
       related: true
       classes: wide
+      header:
+        overlay_color: "#333"
   # _pages
   - scope:
       path: "_pages"

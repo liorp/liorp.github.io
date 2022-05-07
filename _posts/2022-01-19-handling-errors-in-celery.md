@@ -9,10 +9,8 @@ tags:
   - rabbitmq
   - errors
   - queue
+excerpt: "How to brace for failure in celery tasks"
 ---
-
-How to brace for failure in celery tasks
-{: .page__subtitle}
 
 Error handling is one of the most important features a framework can offer in order to have a great DX.  
 Some of the implementations can be a really bad DX 👀, or they can be really fun, like in Celery.  

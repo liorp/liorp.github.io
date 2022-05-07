@@ -9,10 +9,8 @@ tags:
   - dvd 
   - dvd-player
   - animation
+excerpt: "Creating the iconic dvd animation in React. Will it touch the corner?"
 ---
-
-Creating the iconic dvd animation in React. Will it touch the corner? 
-{: .page__subtitle}
 
 ## Intro
 

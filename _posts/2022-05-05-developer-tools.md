@@ -7,10 +7,8 @@ tags:
   - developer
   - tools
   - tips
+excerpt: "A curated list of some of my favorite developer tools"
 ---
-
-A curated list of some of my favorite developer tools
-{: .page__subtitle}
 
 This post is not going to be about the chrome developer tools (although you should totally read about it).
 
@@ -51,7 +49,7 @@ If you really can’t find what you're looking for, code it and call it a startu
 
 [^1]: A great stack-overflow [blog post][comments-tips] about writing comments, and the mythical [Code Tells You How, Comments Tell You Why][comments-post].
 
-[nomouse]: {% post_url /_posts/2022-01-09-hashtag-nomouse %}
+[nomouse]: {% post_url 2022-01-09-hashtag-nomouse %}
 [black]: https://github.com/psf/black
 [prettier]: https://prettier.io
 [eslint]: https://eslint.org

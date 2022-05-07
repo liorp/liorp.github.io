@@ -11,10 +11,8 @@ tags:
   - django
   - djangorestframework
   - drf
+excerpt: Designing a hackathon system
 ---
-
-Designing a hackathon system
-{: .page__subtitle}
 
 Recently I've decided to design a hackathon from A to Z.
 

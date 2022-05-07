@@ -6,10 +6,8 @@ categories:
 tags:
   - math
   - hyperreal
+excerpt: "When taking an infinitely small trip lasts forever"
 ---
-
-When taking an infinitely small trip lasts forever
-{: .page__subtitle}
 
 I love books. And I also love math.  
 That's probably why I couldn't lay my hands off a book named "When Einstein Walked With Gödel: Excursions to the Edge of Thought" by Jim Holt.  
