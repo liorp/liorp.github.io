@@ -31,7 +31,7 @@ I started to read about existing implementations and found out about this one:
 
 So, starting to react-ify things up, I rewrote the code in TypeScript, and refactored it to use [`requestAnimationFrame`][useAnimationFrame] to get a smooth animation.
 
-A weird bug that took me some time to solve was that my hooks were called twice - this is because of [`React.StrictMode`][react-strict-mode] , which helps you to spot side effects by intentionally double-invoking function component bodies, state updater functions (the first argument to setState), and dunctions passed to useState, useMemo, or useReducer. That was quite annoying and I just disabled it altogether (what's more, this only applies to development mode, and lifecycles will not be double-invoked in production mode).
+A weird bug that took me some time to solve was that my hooks were called twice - this is because of [`React.StrictMode`][react-strict-mode] , which helps you to spot side effects by intentionally double-invoking function component bodies, state updater functions (the first argument to setState), and functions passed to useState, useMemo, or useReducer. That was quite annoying and I just disabled it altogether (what's more, this only applies to development mode, and lifecycles will not be double-invoked in production mode).
 
 I used [tsup][tsup] and [np][np] to streamline the component creation & uploading to npm. 
 
