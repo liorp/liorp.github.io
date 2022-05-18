@@ -2,7 +2,8 @@
 title: "React DVD player animation (or: will it touch the corner?)"
 date: 2022-05-08T18:00:00+03:00
 categories:
-  - blog
+  - web development
+  - frontend
 tags:
   - react
   - typescript

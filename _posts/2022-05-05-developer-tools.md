@@ -2,7 +2,7 @@
 title: "Developer Tools"
 date: 2022-05-05T21:20:00+03:00
 categories:
-  - blog
+  - development
 tags:
   - developer
   - tools

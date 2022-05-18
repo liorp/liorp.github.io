@@ -2,7 +2,7 @@
 title: "Enabling RabbitMQ's Quorum Queues in Celery"
 date: 2021-09-16T18:19:00+03:00
 categories:
-  - blog
+  - development
 tags:
   - celery
   - rabbitmq

@@ -3,8 +3,8 @@ title: "A short journey to a hyperreal space"
 date: 2022-01-20T13:20:00+02:00
 categories:
   - blog
-tags:
   - math
+tags:
   - hyperreal
 excerpt: "When taking an infinitely small trip lasts forever"
 ---

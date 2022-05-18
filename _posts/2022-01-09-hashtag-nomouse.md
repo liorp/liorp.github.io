@@ -2,7 +2,7 @@
 title: "#nomouse"
 date: 2022-01-09T17:11:00+02:00
 categories:
-  - blog
+  - development
 tags:
   - nomouse
   - mouse

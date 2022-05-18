@@ -2,7 +2,7 @@
 title: "Steganography, aka Encryption and Cyber"
 date: 2021-08-14T18:16:00+03:00
 categories:
-  - blog
+  - development
 tags:
   - python
   - steganography

@@ -3,10 +3,10 @@ title: "Should I turn off the lights?"
 date: 2021-10-02T18:41:00+03:00
 categories:
   - blog
-tags:
-  - math
   - physics
+  - math
   - environment
+tags:
   - energy
   - light
 excerpt: "Before there was light, darkness was over the surface of the deep"

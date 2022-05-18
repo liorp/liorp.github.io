@@ -2,7 +2,7 @@
 title: "Handling Errors in Celery"
 date: 2022-01-19T17:11:00+02:00
 categories:
-  - blog
+  - development
 tags:
   - celery
   - python
