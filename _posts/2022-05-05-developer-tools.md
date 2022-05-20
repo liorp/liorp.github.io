@@ -40,12 +40,14 @@ If you really can’t find what you're looking for, code it and call it a startu
 ## Some useful tools
 
 * [render][render] for deploying apps
+* [koyeb][koyeb] for deploying apps
 * [ngrok] domain for testing
 * [nutjs] for automations 
 * [LICEcap][licecap] for screen recording gif
 * [Figma][figma] for design
 * [tsup][tsup] for creating (small) react components
 * [np][np] for publishing npm packages
+* [obsidian][obsidian] for your second brain thoughts and ideas
 
 [^1]: A great stack-overflow [blog post][comments-tips] about writing comments, and the mythical [Code Tells You How, Comments Tell You Why][comments-post].
 
@@ -64,4 +66,6 @@ If you really can’t find what you're looking for, code it and call it a startu
 [figma]: https://www.figma.com
 [render]: https://render.com
 [tsup]: https://github.com/egoist/tsup
-[np]: https://github.com/sindresorhus/np
+[np]: https://github.com/sindresorhuws/np
+[koyeb]: https://www.koyeb.com/pricing
+[obsidian]: https://obsidian.md
