@@ -4,17 +4,17 @@ date: 2022-01-01T17:11:00+02:00
 categories:
   - web development
   - frontend
+  - javascript
 tags:
   - react
   - mouseevents
   - mouse
-  - javascript
   - js
   - onmouseenter
   - onmouseleave
   - onmouseout
   - onmouseover
-excerpt: "Of mouse and events"
+excerpt: "Of mice and events"
 ---
 
 Recently I've had a nasty issue regarding an autocomplete component that refused to render its options properly.  
