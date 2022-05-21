@@ -1,6 +1,6 @@
 ---
 title: "JavaScript Scope (and the Event Loop)"
-date: 2022-05-22T18:00:00+03:00
+date: 2022-05-21T18:00:00+03:00
 categories:
   - frontend
   - javascript
@@ -24,40 +24,12 @@ But what is the JavaScript [scope][jsscope]? Quoting from the holy bible of the 
 Furthermore, in other parts of the program, the same variable name may refer to a different entity (a different binding), or to nothing (unbound). [^1]
 
 Armed with this knowledge, let's look at the code in question:  
-```js
-let state = {
-    age: 0
-};
-let getState = () => {
-     let setState = () => {
-        state = {
-            age: state.age + 1
-        }
-    }
-    return {
-        state,
-        setState
-    }
-}
-
-function foo() {
-    let {
-        state:st,
-        setState
-    } = getState();
-    replicaUseEffect = () => {
-        console.log("replicaUseEffect", st);
-    }
-    console.log("before", st);
-
-    setState()
-    console.log("after", st);
-
-
-    setTimeout(() => replicaUseEffect(), 1000)
-};
-foo();
-```
+<iframe src="https://stackblitz.com/edit/js-jplnzf?embed=1&file=index.js"
+     style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+     title="stackoverflow-useeffect-question"
+     allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+   ></iframe>
 
 When run, it prints:
 ```js

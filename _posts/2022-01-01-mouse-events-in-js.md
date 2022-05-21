@@ -48,9 +48,9 @@ This means that `onmouseenter` and `onmouseleave` do not bubble up - they do not
 hence they're used when you care about the element as a whole.
 
 This codesandbox should make things more graphic:
-<iframe src="https://codesandbox.io/embed/zen-khorana-cq5i5?fontsize=14&hidenavigation=1&theme=light"
+<iframe src="https://codesandbox.io/embed/mouse-events-js-demo-cq5i5?fontsize=14&theme=light"
      style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-     title="zen-khorana-cq5i5"
+     title="mouse-events-js-demo"
      allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
      sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
 ></iframe>
