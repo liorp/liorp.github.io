@@ -7,6 +7,7 @@ categories:
 tags:
   - js
   - scope
+  - event loop
 excerpt: "The event loop, the scope, look at this post that I wrote!"
 ---
 I'll admit it straightforward- I sometimes enter [stackoverflow][stackoverflow] and look at the questions posted; I just enjoy to give back to the community my humble share back. 😇  
