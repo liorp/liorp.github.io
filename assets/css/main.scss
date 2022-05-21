@@ -11,17 +11,16 @@ $sans-serif: Poppins, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "
 @import "minimal-mistakes"; // main partials
 
 .highlight {
-    background: rgb(230, 230, 230);
     max-height: 300px;
-    overflow: scroll;
+    overflow-y: scroll;
     border: 1px #C1C1C1;
     border-radius: 3px;
-  pre {
-    overflow-x: unset;
-    table {
+    pre {
       overflow-x: unset;
+      table {
+        overflow-x: unset;
+      }
     }
-  }
 }
 
 .page__subtitle{

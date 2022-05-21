@@ -278,7 +278,7 @@ drawer: {
   },
 {% endhighlight %}
 
-And Voilà! A perfect animation:
+And Voilà! A perfect animation:  
 ![side-menu-slow-animation](/assets/images/2021-03-31-material-ui-drawer-flex-layout/side-menu-perfect-animation.gif)
 
 The complete code is available [here][flex-layout-react-material-ui-drawer].
