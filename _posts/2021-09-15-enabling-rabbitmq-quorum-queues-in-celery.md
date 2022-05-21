@@ -13,7 +13,7 @@ tags:
 excerpt: "What to do when your rabbit doesn't want to eat its veggies"
 ---
 
-### Intro
+# Intro
 When I was first introduced to the concept of parallel work, I was told the following explanation:  
 You have publishers that publish tasks, subscribers that consume messages, and a broker mechanism that is responsible to suck in the tasks from the publishers and send them to subscribers that will actually perform the tasks, optionally returning an answer to the publishers.  
 This is called work queues, as illustrated here (one publisher and many consumers, from RabbitMQ's official docs):  
@@ -28,7 +28,7 @@ A common implementation of this configuration is done with [celery][celery] for 
 
 ---
 
-### Real World Catastrophy
+# Real World Catastrophy
 Well, this sounds really good in theory, but in practice there are many points of failure involved when deploying such a system.  
 One of the most common points of failure is data safety with regard to broker downtime.  
 
@@ -39,14 +39,14 @@ Trust me - if you're writing a microservice that's handling some work, that's re
 
 ---
 
-### Minimizing Dependencies
+# Minimizing Dependencies
 Enter RabbitMQ's [Mirrored Queues][rabbitmq-mirrored-queues].  
 Up until recently, this was the default way of having a cluster of RabbitMQ nodes operate even when nodes go down. Yet, quoting from RabbitMQ's documentation on Quorum Queues:
 > Classic mirrored queues in RabbitMQ have technical limitations that makes it difficult to provide comprehensible guarantees and clear failure handling semantics. Certain failure scenarios can result in mirrored queues confirming messages too early, potentially resulting in a data loss.
 
 ---
 
-### Quorum Queues to the rescue!
+# Quorum Queues to the rescue!
 So what should we do? Enter [Quorum Queues][rabbitmq-quorum-queues].  
 Quorum Queues are based on a consensus algorithm named [Raft][raft], and they are considered the next version of high availablity queues.  
 🪓 RabbitMQ even says that Mirrored Queues will be removed in a future release 🪓
@@ -65,7 +65,7 @@ This stems from the fact that celery sets a global QoS (in simple terms, this me
 
 ---
 
-### The "Hack"
+# The "Hack"
 But... you can still have them.
 By hooking into the bootsteps of the celery worker, you can force it to have a per-consumer QoS, in this manner: 
 {% highlight python linenos %}

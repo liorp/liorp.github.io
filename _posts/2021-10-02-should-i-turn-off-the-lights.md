@@ -12,7 +12,7 @@ tags:
 excerpt: "Before there was light, darkness was over the surface of the deep"
 ---
 
-## Let there be light 💡
+# Let there be light 💡
 As a kid, I learned a lot of environmental studies in my school (shout out to ["An Inconvenient Truth"][an-inconvenient-truth]).  
 I can remember many classes watching old movies on VCR, and building models of the Earth, calculating naive calculations about energy efficiency and species extinctions.  
 I'd like to think of this as an impetus to my choice to study physics and maths. I reckon that something about the rigor of the natural sciences and the precision of the calculations acquired during those early years really drove me in.
@@ -22,7 +22,7 @@ Naturally, I thought it might be a fun [back-of-the-envelope][back-of-the-envelo
 
 ---
 
-## It all started with a switch 🎚
+# It all started with a switch 🎚
 
 I started by figuring out how much energy does one need in order to flip a switch. According to [this website][calories-switch-click], 
 > On average, 16.7 micromoles of ATP (Adenosine triphosphate) are consumed in moving one gram of muscle for one second. So, the total amount of ATP burned to move 11.7 grams of muscle in the index finger is approximately 195 micromoles (11.7g×16.7μ mol/g). There are 7.3 calories in one mole of ATP energy, so the number of calories burned in clicking the mouse equals about 1.42 = (7.3/1000) X 195.

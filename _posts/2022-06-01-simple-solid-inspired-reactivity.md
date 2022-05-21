@@ -85,7 +85,7 @@ In fact, solid proudly describes its components as "vanishing components" - they
 This is why, in solid, components are helpful for code organization and cease to exist once the initial render occurs.
 
 ---
-## Reactivity, Round 2
+# Reactivity, Round 2
 
 But how exactly is this implemented? Well, solid has quite an extensive [repo on github][solidrepo], but in their [advanced intro][solid10min] (a.k.a solidjs in 10 minutes) they explain a simplified version of their implementation of reactivity in a way that I found to be truly beautiful and mesmerizing. 🤯
 

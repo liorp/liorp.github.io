@@ -16,7 +16,7 @@ No, this post is about some developer tools I found along the way, which I use t
 
 First, let's start with some not quite common tips, that no one tells you about when you begin.
 
-## Things I’ve learned
+# Things I’ve learned
 
 * It's going to be tough. Embrace.
 
@@ -37,7 +37,7 @@ For example, I reviewed a code that could return 200, then 438 then 200. This me
 * Someone else thought about it before you. [Use the open source community][github].  
 If you really can’t find what you're looking for, code it and call it a startup. 
 
-## Some useful tools
+# Some useful tools
 
 * [render][render] for deploying apps
 * [koyeb][koyeb] for deploying apps
