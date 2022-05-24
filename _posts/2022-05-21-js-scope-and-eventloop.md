@@ -213,7 +213,8 @@ To sum it up, this post talked about some very delicate subjects in js: the [eve
 Indeed, the scope can be intimidating and complicated at first sight - which, with this question in mind, reminds us to use `let` and `const`.
 The event loop also has its proper place in the list of things that are unclear at first when starting to code in js.
 
-I encourage everyone who enjoyed this article to read some more about the [event loop][elmdn] and the [scope][jsscope] in [mdn][mdn].
+I encourage everyone who enjoyed this article to read some more about the [event loop][elmdn] and the [scope][jsscope] in [mdn][mdn].  
+Also, [this video][eventloopvid] on the js event loop cleared my mind a bit - maybe it could the same to you, who knows
 
 [^1]: This is based on [wikipedia][scopewiki]
 [^2]: While this is based on [mdn][elmdn]
@@ -231,3 +232,4 @@ I encourage everyone who enjoyed this article to read some more about the [event
 [elmdn]: https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
 [settimeoutmdn]: https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
 [mdn]: https://developer.mozilla.org/en-US/
+[eventloopvid]: https://www.youtube.com/watch?v=8aGhZQkoFbQ
