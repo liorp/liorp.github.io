@@ -37,8 +37,8 @@ The fantastic four (© Marvel) are:
 | -----------  | ----------- | ----------- | 
 | `onmouseenter` | Occurs when the pointer is moved onto an element | When you care about entering **the whole element**, not for entering children |
 | `onmouseleave` | Occurs when the pointer is moved out of an element | When you care about exiting **the whole element**, not for exiting children |
-| `onmouseout`   | Occurs when a user moves the mouse pointer out of an element, or out of one of its children | When you care about entering the element, and **also for entering children** |
-| `onmouseover`  | Occurs when the pointer is moved onto an element, or onto one of its children | When you care about exiting the element, and **also for exiting children** |
+| `onmouseover`  | Occurs when the pointer is moved onto an element, or onto one of its children | When you care about entering the element, and **also for entering children** |
+| `onmouseout`   | Occurs when a user moves the mouse pointer out of an element, or out of one of its children | When you care about exiting the element, and **also for exiting children** |
 
 Note the slight difference between these two sets of events - while `onmouseenter` and `onmouseleave` occur on the element,  
 `onmouseout` and `onmouseover` occur on the element  
