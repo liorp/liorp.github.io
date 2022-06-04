@@ -69,7 +69,7 @@ plugins:
 
 author:
   name   : "Lior Pollak"
-  avatar : "/assets/images/profile.jpg"
+  avatar : "/assets/images/profile_mini.webp"
   bio    : "Fullstack & math. Also some physics."
   links:
     - label: "Website"
