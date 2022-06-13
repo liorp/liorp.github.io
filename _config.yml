@@ -134,4 +134,5 @@ comments:
     label: "comment"
 
 after_footer_scripts:
+  - /assets/js/google.js
   - /assets/js/cookie-consent.js

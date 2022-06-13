@@ -1,4 +1,3 @@
-<script>
 function loadGAonConsent() {
     var ga = document.createElement('script')
     ga.type = 'text/javascript'
@@ -18,4 +17,3 @@ function loadGAonConsent() {
 
     gtag('config', 'G-6P7DB582X4', { page_path: window.location.pathname})
 }
-</script>
