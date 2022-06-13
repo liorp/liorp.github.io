@@ -1,4 +1,4 @@
-function loadGAonConsent() {
+(function loadGA() {
     var ga = document.createElement('script')
     ga.type = 'text/javascript'
     ga.async = true
@@ -16,4 +16,4 @@ function loadGAonConsent() {
     gtag('js', new Date())
 
     gtag('config', 'G-6P7DB582X4', { page_path: window.location.pathname})
-}
+})()
