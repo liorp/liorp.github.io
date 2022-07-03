@@ -48,6 +48,8 @@ If you really can’t find what you're looking for, code it and call it a startu
 * [tsup][tsup] for creating (small) react components
 * [np][np] for publishing npm packages
 * [obsidian][obsidian] for your second brain thoughts and ideas
+* [lottiefiles][lottiefiles] for lightweight, scalable animations
+* [undraw][undraw] for free, open-source, high-quality svg drawings
 
 [^1]: A great stack-overflow [blog post][comments-tips] about writing comments, and the mythical [Code Tells You How, Comments Tell You Why][comments-post].
 
@@ -69,3 +71,5 @@ If you really can’t find what you're looking for, code it and call it a startu
 [np]: https://github.com/sindresorhuws/np
 [koyeb]: https://www.koyeb.com/pricing
 [obsidian]: https://obsidian.md
+[lottiefiles]: http://lottiefiles.com
+[undraw]: https://undraw.co/illustrations
