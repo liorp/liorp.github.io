@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 
-gem "nokogiri", "~> 1.13.1"
+gem "nokogiri", "~> 1.13.8"
 gem "github-pages", group: :jekyll_plugins
 
 gem "tzinfo-data"
