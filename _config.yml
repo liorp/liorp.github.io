@@ -132,7 +132,3 @@ comments:
     theme: "github-dark" 
     issue_term: "pathname"
     label: "comment"
-
-after_footer_scripts:
-  - /assets/js/google.js
-  - /assets/js/klaroConfig.js
