@@ -2,8 +2,8 @@
 title: "Machine Learning Optimization Algorithms Survey Part 2"
 date: 2022-06-12T18:40:00+03:00
 categories:
-  - machine learning
-  - deep learning
+  - machine-learning
+  - deep-learning
 tags:
   - ml
   - dl

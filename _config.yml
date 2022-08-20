@@ -28,7 +28,7 @@ analytics:
   google:
     tracking_id: UA-193470211-1
     anonymize_ip: true
-encoding: utf-8
+encoding: UTF-8
 github: [metadata]
 
 # Build settings
@@ -38,7 +38,7 @@ remote_theme: mmistakes/minimal-mistakes
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: IL # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Tel_Aviv # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 repository: liorp/liorp.github.io
 future: false
 livereload: true
@@ -135,4 +135,4 @@ comments:
 
 after_footer_scripts:
   - /assets/js/google.js
-  - /assets/js/cookie-consent.js
+  - /assets/js/klaroConfig.js

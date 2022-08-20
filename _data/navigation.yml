@@ -9,3 +9,5 @@ main:
     url: /about/
   - title: "Terms"
     url: /terms/
+  - title: "Settings"
+    url: /settings/

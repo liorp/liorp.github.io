@@ -2,7 +2,7 @@
 title: "Mouse Events in JS 🐁"
 date: 2022-01-01T17:11:00+02:00
 categories:
-  - web development
+  - web-development
   - frontend
   - javascript
 tags:

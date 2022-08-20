@@ -2,7 +2,7 @@
 title: "React Material-UI drawer flex layout"
 date: 2021-03-31T13:24:30+02:00
 categories:
-  - web development
+  - web-development
   - frontend
 tags:
   - react

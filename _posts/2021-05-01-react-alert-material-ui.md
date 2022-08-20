@@ -2,7 +2,7 @@
 title: "Hackathon Part 1, or using Material-UI snackbar alerts in react-material"
 date: 2021-05-01T17:36:00+03:00
 categories:
-  - web development
+  - web-development
   - frontend
 tags:
   - react-alert

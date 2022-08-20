@@ -2,7 +2,7 @@
 title: "Hackathon Part 2, or building a CTF management system"
 date: 2021-05-14T16:37:00+03:00
 categories:
-  - web development
+  - web-development
   - fullstack
 tags:
   - react
