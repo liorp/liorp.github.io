@@ -34,6 +34,9 @@ Use them with caution[^1], as
 Your happy flow is where everything is guaranteed to be good.  
 For example, I reviewed a code that could return 200, then 438 then 200. This means that something is off and you should second guess your initial assumptions. 
 
+* Think through your abstractions - avoid [leaky abstractions][leaky-abstraction]. For example, Ruby on Rails (along with some other web frameworks) implements a hack: it tries to route HEAD requests to the same place as it would route GET requests. Then it runs the controller code, and just omits the response body.
+This is one hell of a leaking abstraction - [and it made one hell of a security headache over at GitHub][github-oauth].
+
 * Someone else thought about it before you. [Use the open source community][github].  
 If you really can’t find what you're looking for, code it and call it a startup. 
 
@@ -73,3 +76,5 @@ If you really can’t find what you're looking for, code it and call it a startu
 [obsidian]: https://obsidian.md
 [lottiefiles]: http://lottiefiles.com
 [undraw]: https://undraw.co/illustrations
+[leaky-abstraction]: https://en.wikipedia.org/wiki/Leaky_abstraction
+[github-oauth]: https://blog.teddykatz.com/2019/11/05/github-oauth-bypass.html
