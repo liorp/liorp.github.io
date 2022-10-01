@@ -77,7 +77,7 @@ Another way to look at this algorithm is by viewing it as an implementation of e
 The equation for the update is
 $$v_{j}\left(t+1\right)=-\eta\cdot\frac{\partial L}{\partial\theta_{j}}\left(\theta_{j}\left(t\right)\right)+v_{j}\left(t\right)\cdot\alpha \\ $$
 
-Where $$\alpha$$ is the momentum factor. Many experiments have empirically verified the most appropriate setting for the momentum factor is $0.9$. Sometime $$\eta$$ is chosen to be $$1-\alpha$$, seen as storing an exponentially decaying average of past gradients.
+Where $$\alpha$$ is the momentum factor. Many experiments have empirically verified the most appropriate setting for the momentum factor is $$0.9$$. Sometime $$\eta$$ is chosen to be $$1-\alpha$$, seen as storing an exponentially decaying average of past gradients.
 
 If the current gradient is parallel to the previous velocity $$v_{j}\left(t\right)$$, the previous velocity can speed up this search. The proper momentum plays a role in accelerating the convergence when the learning rate is small. If the derivative decays to 0, it will continue to update $$v$$ to reach equilibrium and will be attenuated by friction.
 
