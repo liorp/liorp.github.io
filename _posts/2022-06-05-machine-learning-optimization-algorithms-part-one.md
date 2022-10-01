@@ -109,7 +109,7 @@ Where we add $$\epsilon$$ in the denominator in order to ensure numerical stabil
 
 ## Adaptive moment estimation (ADAM)
 
-ADAM is another advanced SGD method, which introduces an adaptive learning rate for each parameter. It combines the adaptive learning rate and momentum methods. In addition to storing an exponentially decaying average of past squared gradients $V_{t}$, like RMSProp, ADAM also keeps an exponentially decaying average of past gradients $m_{t}$, similar to the momentum method:
+ADAM is another advanced SGD method, which introduces an adaptive learning rate for each parameter. It combines the adaptive learning rate and momentum methods. In addition to storing an exponentially decaying average of past squared gradients $$V_{t}$$, like RMSProp, ADAM also keeps an exponentially decaying average of past gradients $$m_{t}$$, similar to the momentum method:
 
 $$g_{t}=\frac{\partial L}{\partial\theta}\left(\theta\left(t\right)\right) \\ $$
 
