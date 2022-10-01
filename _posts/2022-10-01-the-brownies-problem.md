@@ -13,7 +13,7 @@ excerpt: "Brownies + Fibonacci = Combinatorics"
 
 Quite an interesting problem popped up my twitter feed the other day:
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Here&#39;s a neat puzzle:<br><br>We buy 12 éclairs from a bakery.<br><br>Each éclair measures 1 x 2. And they all go into a 12 x 2 box.<br><br>In how many ways can the baker arrange the éclairs in the box? Two possible ways are shown in the picture below.<br><br>Solution coming tomorrow! <a href="https://t.co/1ekGIkUiBD">pic.twitter.com/1ekGIkUiBD</a></p>&mdash; Ramanujan&#39;s Dosa (@RamanujansDosa) <a href="https://twitter.com/RamanujansDosa/status/1568192618743439360?ref_src=twsrc%5Etfw">September 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Here&#39;s a neat puzzle:<br><br>We buy 12 éclairs from a bakery.<br><br>Each éclair measures 1 x 2. And they all go into a 12 x 2 box.<br><br>In how many ways can the baker arrange the éclairs in the box? Two possible ways are shown in the picture below.<br><br>Solution coming tomorrow! <a href="https://t.co/1ekGIkUiBD">pic.twitter.com/1ekGIkUiBD</a></p>&mdash; Ramanujan&#39;s Dosa (@RamanujansDosa) <a href="https://twitter.com/RamanujansDosa/status/1568192618743439360?ref_src=twsrc%5Etfw">September 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Take a few minutes and try to devise a solution to this problem.
 
