@@ -42,7 +42,7 @@ B.Sc. degree in Mathematics and Physics (Combined), Cum Laude
 - Familiarity with CI/CD processes and work procedures in Kubernetes and Docker environments. I've converted dozens of projects to a full Helm architecture.
 - Fluent in English.
 
-## PRIZES
+## ACCOLADES
 
 - Academic excellence, Mathematics Department, Bar Ilan University, 2014-7
 - Academic excellence, Physics Department, Bar Ilan University, 2015, 2016
