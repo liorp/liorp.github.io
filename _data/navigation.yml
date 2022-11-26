@@ -1,13 +1,13 @@
 main:
-  - title: "Posts"
+  - title: "POSTS"
     url: /posts/
-  - title: "Categories"
+  - title: "CATEGORIES"
     url: /categories/
-  - title: "Tags"
+  - title: "TAGS"
     url: /tags/
-  - title: "About"
-    url: /about/
-  - title: "Terms"
+  - title: "TERMS"
     url: /terms/
-  - title: "Settings"
+  - title: "SETTINGS"
     url: /settings/
+  - title: "RESUME"
+    url: /resume/
