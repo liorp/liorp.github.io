@@ -35,12 +35,12 @@ github: [metadata]
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
-permalink: /:categories/:title
+permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Asia/Tel_Aviv # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 repository: liorp/liorp.github.io
-future: false
+future: true
 livereload: true
 
 include:
