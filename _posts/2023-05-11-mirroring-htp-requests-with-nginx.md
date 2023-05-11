@@ -25,12 +25,12 @@ Fortunately, [Nginx](https://nginx.org) (my go-to webserver for production, whic
 ### Setup
 
 <figure class="align-center">
-```mermaid
+<code class="mermaid">
 graph TD;
 User-->Nginx{Nginx};
 Nginx-->Operational;
 Nginx-.->Staging;
-```
+</code>
   <figcaption>Flowchart of the mirroring</figcaption>
 </figure>
 
