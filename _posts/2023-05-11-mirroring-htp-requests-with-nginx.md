@@ -10,7 +10,7 @@ tags:
   - mirror
 excerpt: "Mirror mirror on the wall, who am I talking to at all? 🪞"
 header:
-  overlay_image: /assets/images/2023-05-11-mirroring-htp-requests-with-nginx/city.png
+  overlay_image: /assets/images/2023-05-11-mirroring-http-requests-with-nginx/city.png
   overlay_filter: 0.5
   caption: "Photo credit: [**DALL E 2**](https://openai.com/dall-e-2/)"
   actions:
@@ -189,7 +189,7 @@ Request headers: {
 
 As you can see, the staging server received a mirrored request, sent to the operational server!
 
-![great-success](/assets/images/2023-05-11-mirroring-htp-requests-with-nginx/borat-success.jpg)
+![great-success](/assets/images/2023-05-11-mirroring-http-requests-with-nginx/borat-success.jpg)
 
 ---
 
