@@ -28,9 +28,9 @@ I was responsible for the new website and IT of Bar Ilan University’s Students
 
 ## EDUCATION
 
-### 2017 – N/A Bar Ilan University
+### 2017 – 2023 Bar Ilan University
 
-M.Sc. degree in Mathematics (Excellence Program)
+M.Sc. degree in Mathematics (Excellence Program), Cum Laude
 
 ### 2014 – 2017 Bar Ilan University
 
@@ -39,7 +39,7 @@ B.Sc. degree in Mathematics and Physics (Combined), Cum Laude
 ## SKILLS
 
 - Programming with Python (speciality in Django and DRF), and JavaScript (React). I used to know some Objective-C, Swift, and C, but I am not quite fluent in them now.
-- Familiarity with CI/CD processes and work procedures in Kubernetes and Docker environments. I've converted dozens of projects to a full Helm architecture.
+- Familiarity with CI/CD processes and work procedures in Kubernetes and Docker environments. I've converted projects to a full Helm architecture.
 - Fluent in English.
 
 ## ACCOLADES
