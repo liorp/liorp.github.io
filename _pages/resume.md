@@ -13,11 +13,11 @@ See [liorp.dev](https://liorp.dev)
 
 ### 2016 – 2018 Chief iOS Developer at iStudent
 
-I was responsible for the iOS version of iStudent app for students. This app gives discounts for students at many places throughout Israel.
+I was in charge of the iOS version of iStudent app for students. This app gives discounts for students at many places throughout Israel.
 
 ### 2016 – 2017 Chief Digital Officer at Bar Ilan University’s Students’ Association
 
-I was responsible for the new website and IT of Bar Ilan University’s Students’ Association.
+I was in charge of the new website and IT of Bar Ilan University’s Students’ Association.
 
 ### 2012 – 2016 Developing Apps
 
