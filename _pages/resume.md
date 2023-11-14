@@ -18,19 +18,22 @@ I was in charge of the iOS version of iStudent app for students. This app gives 
 ### 2016 – 2017 Chief Digital Officer at Bar Ilan University’s Students’ Association
 
 I was in charge of the new website and IT of Bar Ilan University’s Students’ Association.
+I developed a new system for dispersing gifts using PHP.
 
-### 2012 – 2016 Developing Apps
+### From 2012 – Developing apps, contributing to open source projects
 
+- Several open source projects that I contributed to include splunk_handler, tendo and boardgame.io.
+- Several open source projects that I created include eager_cache, react-dvd-player-animation, pysteg, cmprsr, and milan.
 - Doryt is a third-party app I made. It helps the students of Bar Ilan University to know their grades and test schedule, among other academic matters.
 - Ohel-Shem is an app I made for my high school, as part of my role on the website team. It helps the students to know their timetable and test schedule, among other academic matters.
-- Evade is a game I made, in which the main objective is to dodge shapes.  
-  During the summer of 2012, I developed my first app for iOS- TaleMe. This game is an implementation of social storytelling for iOS.
+- Evade is a game I made, in which the main objective is to dodge shapes.
+- During the summer of 2012, I developed my first app for iOS- TaleMe. This game is an implementation of social storytelling for iOS.
 
 ## EDUCATION
 
 ### 2017 – 2023 Bar Ilan University
 
-M.Sc. degree in Mathematics (Excellence Program), Cum Laude
+M.Sc. degree in Mathematics (Excellence Program, with thesis, Cum Laude
 
 ### 2014 – 2017 Bar Ilan University
 
