@@ -33,7 +33,7 @@ I developed a new system for dispersing gifts using PHP.
 
 ### 2017 – 2023 Bar Ilan University
 
-M.Sc. degree in Mathematics (Excellence Program, with thesis, Cum Laude
+M.Sc. degree in Mathematics (Excellence Program), with thesis, Cum Laude
 
 ### 2014 – 2017 Bar Ilan University
 
