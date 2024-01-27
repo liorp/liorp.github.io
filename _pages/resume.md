@@ -1,7 +1,7 @@
 ---
 permalink: /resume/
 date: 2022-11-26T17:11:00+02:00
-title: "RESUME"
+title: "Resume"
 author_profile: true
 ---
 
