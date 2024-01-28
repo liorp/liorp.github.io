@@ -99,7 +99,7 @@ An example project can be found [here][quorum-queues-with-celery].
 
 Go ahead and tell me in the comments if it worked for you 🤠
 
-UPDATE [01.05.2022]: Thanks to [Ilai Shai][ilsh] for several refinments to the celery code.
+UPDATE [01.05.2022]: Thanks to [Ilai Shai][ilsh] for several refinements to the celery code.
 
 [celery]: https://docs.celeryproject.org/en/stable/
 [rabbitmq]: https://pypi.org/project/cryptography/

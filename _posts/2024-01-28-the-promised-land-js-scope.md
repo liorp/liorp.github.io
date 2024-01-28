@@ -9,7 +9,7 @@ tags:
 excerpt: "Sometimes all you need is just the right context"
 ---
 
-In the course of my recent work on an endpoint tasked with fetching data from an external server, a peculiar bug surfaced. This external server occasionally threw errors, making the problem more elusive at it hapened statstically, and not on every call. Join me as we explore the nuances of this intermittent challenge in asynchronous programming.
+In the course of my recent work on an endpoint tasked with fetching data from an external server, a peculiar bug surfaced. This external server occasionally threw errors, making the problem more elusive at it happened statistically, and not on every call. Join me as we explore the nuances of this intermittent challenge in asynchronous programming.
 
 ## The premise
 
@@ -175,5 +175,8 @@ I hope this journey through the async maze was as enlightening for you as it was
 
 - [MDN - async function][MDN async function]
 
+UPDATE [28.01.2024]: Thanks to [Eytan Schulman][eytansh] for several refinements to the article.
+
 [microtasks]: https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide/In_depth
 [MDN async function]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function#async_functions_and_execution_order
+[eytansh]: https://www.linkedin.com/in/eytanschulman?trk=blended-typeahead
