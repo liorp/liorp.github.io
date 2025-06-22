@@ -6,25 +6,26 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 
-$sans-serif: Poppins, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
-$max-width: 80%;
+$sans-serif: Poppins, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI",
+  "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$max-width: 100%;
 
 @import "minimal-mistakes"; // main partials
 
 .highlight {
-    max-height: 300px;
-    overflow-y: scroll;
-    border: 1px #C1C1C1;
-    border-radius: 3px;
-    pre {
+  max-height: 300px;
+  overflow-y: scroll;
+  border: 1px #c1c1c1;
+  border-radius: 3px;
+  pre {
+    overflow-x: unset;
+    table {
       overflow-x: unset;
-      table {
-        overflow-x: unset;
-      }
     }
+  }
 }
 
-.page__subtitle{
+.page__subtitle {
   border-bottom: 1px solid $light-gray;
   font-size: $type-size-5;
   color: $gray;
