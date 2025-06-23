@@ -13,10 +13,6 @@ tags:
 excerpt: "Exploring what index mappings in Elasticsearch are, why they matter, and how to manage them to avoid too many fields errors."
 ---
 
-Here’s a more polished and consistent version of that section:
-
----
-
 If you’ve ever worked with Elasticsearch, you might have hit an error like `illegal_argument_exception: Limit of total fields [1000] has been exceeded`. This happened to me at work when I accidentally pushed entire JSON objects into my documents - a classic case of dynamic mapping gone wrong. Because Elasticsearch, by default, tries to infer the data types and structure of every new field it encounters, each nested key in the JSON was automatically added to the index mapping. Every property - even those I never intended to search on - consumed one of the available field slots. Before long, the index hit its 1,000-field limit, and Elasticsearch refused to accept any more documents. It was a frustrating issue to debug at first, but also a valuable lesson in carefully designing mappings and turning off dynamic mapping for fields that don’t need to be individually indexed.
 
 But why did this happen in the first place? To understand the cause - and how to prevent it - let’s look at the main subject of this post: **index mappings**. Think of mappings as Elasticsearch’s version of a database schema. Just like a relational database has tables with defined columns and data types, Elasticsearch uses mappings to control the structure and types of your fields. This schema-like approach gives you fine-grained control over how data is stored and searched, but it can also introduce pitfalls if you let it grow unchecked. Let’s dive into what mappings are, why they matter, and how to avoid blowing up your cluster with too many fields.
