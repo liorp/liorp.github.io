@@ -27,7 +27,7 @@ The core functionality of Firgun revolves around the Slack Workflow Apps platfor
 
 ### Challenges and Solutions
 
-During the development process, I encountered a few bugs within the Slack Workflow Apps platform.. The support from the Slack team was invaluable—they were prompt and thorough in addressing each issue, ensuring that the development process remained smooth.
+During the development process, I encountered a few bugs within the Slack Workflow Apps platform. The support from the Slack team was invaluable—they were prompt and thorough in addressing each issue, ensuring that the development process remained smooth.
 
 ### Documentation and Community Support
 
