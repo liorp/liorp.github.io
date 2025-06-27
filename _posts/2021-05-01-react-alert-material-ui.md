@@ -10,11 +10,9 @@ tags:
 excerpt: "Making a theme for react alert"
 ---
 
-Recently I've decided to design a hackathon from A to Z.
+Recently, I decided to design a hackathon from A to Z.
 
-Beside from creating the stages themselves (which I will delve into details in another blog post,
-I hope), I didn't seem to find any open source software to manage the hackathon itself 
-(which will be discussed, you guessed it right, in yet another blog post).
+Besides creating the stages themselves (which I will delve into in another blog post, I hope), I couldn't find any open source software to manage the hackathon itself (which will be discussed, you guessed it, in yet another blog post).
 
 I decided to use the amazing library [react-alert][react-alert], which comes with a few built in themes 
 for displaying notifications.
@@ -117,23 +115,21 @@ export default AlertSnackbar;
 Lo and behold (sped up 2x):
 ![snackbar-alert](/assets/images/2021-05-01-react-alert-material-ui/snackbar-alert.gif)
 
-A few remarks for this implementation:  
-⚫️ I used ```@ts-ignore```. Usually, this is a major warning sign, but I did this in order to
-bypass some typing definitions.  
-⚫️ The alert itself does not dismiss when a new one appears.  
-⚫️ The animation effect renders twice (resulting in a slight jittery animation), because of hooks change.
+A few remarks for this implementation:
 
-The complete code is available [here][react-alert-snackbar-material-ui-example],
-and the npm package is available [here][react-alert-snackbar-material-ui-npm].
+- I used `@ts-ignore`. Usually, this is a major warning sign, but I did this in order to bypass some typing definitions.
+- The alert itself does not dismiss when a new one appears.
+- The animation effect renders twice (resulting in a slight jittery animation), because of hooks change.
 
+The complete code is available [here][react-alert-snackbar-material-ui-example], and the npm package is available [here][react-alert-snackbar-material-ui-npm].
 
-I uploaded the package to npm using [np][np]; note that [you can use][npx-vs-npm]
-```npx np```.
+I uploaded the package to npm using [np][np]; note that [you can use][npx-vs-npm] `npx np`.
 
 [react-alert]: https://www.npmjs.com/package/react-alert
 [react-alert-basic-template]: https://github.com/schiehll/react-alert-template-basic
 [react-alert-template-mui]: https://github.com/mayyyc/react-alert-template-mui
 [react-alert-snackbar-material-ui-example]: https://github.com/liorp/react-alert-snackbar-material-ui-example
 [react-alert-snackbar-material-ui-npm]: https://www.npmjs.com/package/react-alert-template-snackbar-material-ui
+
 [np]: [https://zellwk.com/blog/publish-to-npm/]
 [npx-vs-npm]: [https://www.freecodecamp.org/news/npm-vs-npx-whats-the-difference/]

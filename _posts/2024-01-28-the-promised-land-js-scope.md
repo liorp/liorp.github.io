@@ -9,9 +9,11 @@ tags:
 excerpt: "Sometimes all you need is just the right context"
 ---
 
-In the course of my recent work on an endpoint tasked with fetching data from an external server, a peculiar bug surfaced. This external server occasionally threw errors, making the problem more elusive at it happened statistically, and not on every call. Join me as we explore the nuances of this intermittent challenge in asynchronous programming.
+In the course of my recent work on an endpoint tasked with fetching data from an external server, a peculiar bug surfaced. This external server occasionally threw errors, making the problem more elusive as it happened statistically, and not on every call. Join me as we explore the nuances of this intermittent challenge in asynchronous programming.
 
-## The premise
+---
+
+## The Premise
 
 We all appreciate the speed that async programming brings to the table. However, as is often the case with powerful features, it comes with its own set of pitfalls. Let's dissect a seemingly innocuous piece of code:
 
@@ -77,11 +79,12 @@ main();
 ```
 
 Let's break down the code step by step, bottom to top:
-The main function is nothing special. It just calls `asyncStuff` and prints some stuff to the console (think of `asyncStuff` as being your app main loop).
-Then, `asyncStuff` awaits on `otherAsyncStuff` and catches any errors that might occur.
-`otherAsyncStuff` is where the trouble happens. It calls `fetchSomething` twice (think of `fetch` or `axios`), once with an error and once without.
-Then, it awaits on `fetchSomething` with the disk endpoint, and then awaits on `Promise.all` with the two previous calls.
-Finally, it returns the results.
+
+- The `main` function is nothing special. It just calls `asyncStuff` and prints some stuff to the console (think of `asyncStuff` as being your app's main loop).
+- Then, `asyncStuff` awaits on `otherAsyncStuff` and catches any errors that might occur.
+- `otherAsyncStuff` is where the trouble happens. It calls `fetchSomething` twice (think of `fetch` or `axios`), once with an error and once without.
+- Then, it awaits on `fetchSomething` with the disk endpoint, and then awaits on `Promise.all` with the two previous calls.
+- Finally, it returns the results.
 
 Now, let's run this code and see what happens. We get the following output:
 
@@ -112,15 +115,24 @@ Node.js v21.1.0
 
 Wait, what? Why did we get an error? We didn't even get to the `Promise.all` part! 🤨
 
-## The Culprit - Async and Microtasks
+---
+
+## The Culprit: Async and Microtasks
 
 Well, it turns out that the `const diskResult = await fetchSomething("/api/disk");` line is the culprit.
-Here's the gist: when we we `await` the disk call, JavaScript continues running previous calls to `fetchSomething` (as they are `promises`, which are [`microtasks`][microtasks]). The second call to `fetchSomething` throws an error, and since we didn't catch it until the next tick of the event loop, the program crashes.
 
-"But we have a `try/catch` block in `asyncStuff`! Why didn't it catch the error?"  
-Well, when `anotherResponse` is executed, it happens in a different context without our `try/catch` safety net. The error is thrown, and the program crashes.
+Here's the gist:
 
-## The Fix - Taming Promises
+- When we `await` the disk call, JavaScript continues running previous calls to `fetchSomething` (as they are `promises`, which are [`microtasks`][microtasks]).
+- The second call to `fetchSomething` throws an error, and since we didn't catch it until the next tick of the event loop, the program crashes.
+
+"But we have a `try/catch` block in `asyncStuff`! Why didn't it catch the error?"
+
+- When `anotherResponse` is executed, it happens in a different context without our `try/catch` safety net. The error is thrown, and the program crashes.
+
+---
+
+## The Fix: Taming Promises
 
 So, how do we navigate this async maze without a crash? Wrap all calls to `fetchSomething` in the `Promise.all` call. That would look something like this:
 
@@ -167,11 +179,14 @@ main();
 ```
 
 Now, all promises resolve in our original scope - the one adorned with the `try/catch` block. The error is caught, and the program survives unscathed.
+
 To add a pinch of versatility, consider using `Promise.allSettled` instead of `Promise.all` to handle all of the promises, even if some promises are rejected.
+
+---
 
 I hope this journey through the async maze was as enlightening for you as it was for me. Happy coding, and may your promises always resolve in the right context!
 
-## Further reading
+## Further Reading
 
 - [MDN - async function][MDN async function]
 

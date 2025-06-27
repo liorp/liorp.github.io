@@ -80,6 +80,7 @@ await client.indices.create({
   index: "my_index",
   body: {
     mappings: {
+      dynamic: false,
       properties: {
         user: { type: "keyword" },
         createdAt: { type: "date" },
@@ -99,8 +100,8 @@ Here, we explicitly control:
 By creating this mapping manually, you gain several clear advantages:
 
 - Fields and types are explicit - your team and tools know what to expect.
-- No uncontrolled dynamic mappings - you won’t accumulate unpredictable fields as data shapes change.
-- You won’t accidentally exceed field limits - the index will only accept the fields you define, preventing mapping explosion.
+- No uncontrolled dynamic mappings - you won’t accumulate unpredictable fields as data shapes change. [^2]
+- You won’t accidentally exceed field limits - the index will accept the fields you define, preventing mapping explosion. [^2]
 - Easier optimization - you can choose the most efficient types (e.g. using keyword instead of text if you only need exact matches).
 - Clear upgrade paths - when you need to add new fields, you do it consciously by updating the mapping.
 
@@ -124,13 +125,14 @@ As you can see, explicit mappings offer the most control and scalability, especi
 When starting a new project:
 
 - Design mappings up front for stable and scalable indices.
-- Use flattened types if you need to store highly dynamic, semi-structured data without exploding your mappings.
+- Use [flattened types][flattened types] if you need to store highly dynamic, semi-structured data without exploding your mappings.
 - Avoid letting dynamic mapping run amok - uncontrolled field creation can hit the `index.mapping.total_fields.limit` and cause indexing errors.
 
 By keeping these considerations in mind, you’ll make sure your indices stay lean, mean, and ⚡️lightning-fast⚡️ - and you’ll spend more time building features and less time firefighting mapping errors.
 
 [data types]: https://www.elastic.co/docs/reference/elasticsearch/mapping-reference/field-data-types
 [`alias`]: https://www.elastic.co/docs/reference/elasticsearch/mapping-reference/field-alias
+[flattened types]: https://www.elastic.co/guide/en/elasticsearch/reference/8.18/flattened.html
 
 [^1]: https://www.elastic.co/docs/manage-data/data-store/mapping/dynamic-mapping
-[^2]: https://www.elastic.co/docs/manage-data/data-store/mapping/explicit-mapping
+[^2]: You can actually refine this behavior even further to reject documents with unmapped fields, using `"dynamic" :strict`

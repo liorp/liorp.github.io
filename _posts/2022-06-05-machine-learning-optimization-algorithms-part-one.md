@@ -13,26 +13,38 @@ tags:
 excerpt: "Some theoretical background on common machine learning optimization algorithms"
 ---
 
-Not too long ago I took a class in optimization, and as a final assignment our group decided to survey common machine learning optimization techniques. [^1]
-This post is inspired by that assignment.  
-In this first part, we describe common optimization concerns in machine learning. Then, we introduce the three widely used optimization methods - Momentum, RMSProp and ADAM.  
-In the next part, we implement the aforementioned algorithms, show simulations and compare them.
+Not too long ago I took a class in optimization, and as a final assignment our group decided to survey common machine learning optimization techniques.[^1]
+This post is inspired by that assignment.
+
+In this first part, we describe common optimization concerns in machine learning. Then, we introduce three widely used optimization methods—Momentum, RMSProp, and ADAM.
+
+In the next part, we implement the aforementioned algorithms, show simulations, and compare them.
 
 ---
 
 # Problem
 
-As machine learning evolve, a major subset of problems can be solved by these methods. In order to provide an efficient solution, optimization methods have become a paramount need.
+As machine learning evolves, a major subset of problems can be solved by these methods. In order to provide an efficient solution, optimization methods have become a paramount need.
 
-As such, it has attracted much attention of researchers. A lot of work on solving optimization problems or improving optimization methods in machine learning has been proposed successively.
+As such, optimization has attracted much attention from researchers. A lot of work on solving optimization problems or improving optimization methods in machine learning has been proposed successively.
 
 ## Optimization Problems in Supervised Learning
 
-For supervised learning, the goal is to find an optimal mapping function $$f\left(x\right)$$ to minimize the loss function of the training samples, $$\min_{\theta}\frac{1}{N}\sum\limits _{i=1}^{N}L\left(y^{i},f\left(x^{i},\theta\right)\right)$$
+For supervised learning, the goal is to find an optimal mapping function $$f\left(x\right)$$ to minimize the loss function of the training samples:
 
-where $$N$$ is the number of training samples, $$\theta$$ is the parameter of the mapping function, $$x_{i}$$ is the feature vector of the $$i$$th samples, $$y_{i}$$ is the corresponding label, and $$L$$ is the loss function.
+$$\min_{\theta}\frac{1}{N}\sum\limits _{i=1}^{N}L\left(y^{i},f\left(x^{i},\theta\right)\right)$$
 
-There are many kinds of loss functions in supervised learning. Yet, for regression problems, the simplest way is using the square of Euclidean distance as the loss function, $$L\left(y^{i},f\left(x^{i},\theta\right)\right)=\frac{1}{2}\left(y^{\left(i\right)}-f_{\theta}\left(x^{\left(i\right)}\right)\right)^{2}$$
+where:
+
+- $$N$$ is the number of training samples
+- $$\theta$$ is the parameter of the mapping function
+- $$x_{i}$$ is the feature vector of the $$i$$th sample
+- $$y_{i}$$ is the corresponding label
+- $$L$$ is the loss function
+
+There are many kinds of loss functions in supervised learning. Yet, for regression problems, the simplest way is using the square of Euclidean distance as the loss function:
+
+$$L\left(y^{i},f\left(x^{i},\theta\right)\right)=\frac{1}{2}\left(y^{\left(i\right)}-f_{\theta}\left(x^{\left(i\right)}\right)\right)^{2}$$
 
 # Gradient Descent - What It Is
 
@@ -62,7 +74,7 @@ Since the batch gradient descent has high computational complexity in each itera
 
 Since SGD uses only one sample per iteration, the computation complexity for each iteration is $$O(D)$$ where $$D$$ is the number of features. The update rate for each iteration of SGD is much faster than that of batch gradient descent when the number of samples $$N$$ is large. SGD increases the overall optimization efficiency at the expense of more iterations, but the increased iteration number is insignificant compared with the high computation complexity caused by large numbers of samples. It is possible to use only thousands of samples overall to get the optimal solution even when the sample size is hundreds of thousands. **Therefore, compared with batch methods, SGD can effectively reduce the computational complexity and accelerate convergence.**
 
-In practice, many algorithm use a version of SGD that uses more than one sample, but not all the samples. This is known as mini-batch gradient descent.
+In practice, many algorithms use a version of SGD that uses more than one sample, but not all the samples. This is known as mini-batch gradient descent.
 
 The equations for SGD (and for mini-batch) are the same equations for Gradient Descent, but $$N$$ is replaced by $$m$$, where $$1\leq m<N$$.
 
@@ -72,16 +84,17 @@ This method takes inspiration from the concept of momentum in the mechanics of p
 
 The idea of applying momentum in SGD is to preserve the influence of the previous update direction on the next iteration to a certain degree. **The momentum method can speed up the convergence when dealing with high curvature, small but consistent gradients, or noisy gradients.**
 
-Another way to look at this algorithm is by viewing it as an implementation of exponentially weighed averages of the gradients.
+Another way to look at this algorithm is by viewing it as an implementation of exponentially weighted averages of the gradients.
 
-The equation for the update is
+The equation for the update is:
+
 $$v_{j}\left(t+1\right)=-\eta\cdot\frac{\partial L}{\partial\theta_{j}}\left(\theta_{j}\left(t\right)\right)+v_{j}\left(t\right)\cdot\alpha \\ $$
 
-Where $$\alpha$$ is the momentum factor. Many experiments have empirically verified the most appropriate setting for the momentum factor is $$0.9$$. Sometime $$\eta$$ is chosen to be $$1-\alpha$$, seen as storing an exponentially decaying average of past gradients.
+Where $$\alpha$$ is the momentum factor. Many experiments have empirically verified the most appropriate setting for the momentum factor is $$0.9$$. Sometimes $$\eta$$ is chosen to be $$1-\alpha$$, seen as storing an exponentially decaying average of past gradients.
 
 If the current gradient is parallel to the previous velocity $$v_{j}\left(t\right)$$, the previous velocity can speed up this search. The proper momentum plays a role in accelerating the convergence when the learning rate is small. If the derivative decays to 0, it will continue to update $$v$$ to reach equilibrium and will be attenuated by friction.
 
-Further optimizing this, Nesterov Accelerated Gradient Descent uses the gradient of the future position instead of the current position,
+Further optimizing this, Nesterov Accelerated Gradient Descent uses the gradient of the future position instead of the current position:
 
 $$v_{j}\left(t+1\right)=-\eta\cdot\frac{\partial L}{\partial\theta_{j}}\left(\theta_{j}\left(t\right)+v_{j}\left(t\right)\cdot\alpha\right)+v_{j}\left(t\right)\cdot\alpha \\ $$
 
@@ -91,7 +104,7 @@ so it includes more gradient information.
 
 Like momentum gradient descent, this method incorporates previous values of the gradient in the calculation.
 
-It is an unpublished extension, first described in Geoffrey Hinton's lecture notes for his Coursera course on neural networks.[^2]
+RMSProp is an unpublished extension, first described in Geoffrey Hinton's lecture notes for his Coursera course on neural networks.[^2]
 
 It is related to another extension to gradient descent called Adaptive Gradient, or AdaGrad.
 

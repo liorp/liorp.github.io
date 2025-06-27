@@ -14,7 +14,7 @@ excerpt: "Exploring the differences in variable scope and closures between JavaS
 
 ### Understanding Variable Scope and Closures in JavaScript and Python
 
-Recently, while working on a timed log implementation in Node.js, I encountered an issue when trying to replicate the functionality in Python. This experience highlighted the differences in how JavaScript and Python handle variable scope within nested functions. Understanding these differences is crucial for any developer working with both languages. Let’s dive into the details.
+Recently, while working on a timed log implementation in Node.js, I encountered an issue when trying to replicate the functionality in Python. This experience highlighted the differences in how JavaScript and Python handle variable scope within nested functions. Understanding these differences is crucial for any developer working with both languages. Let's dive into the details.
 
 #### JavaScript Closures
 
@@ -60,7 +60,7 @@ increment()  # val 2
 
 Initially, the code may look similar, but there's a crucial difference: the `nonlocal` keyword. In Python, variables defined in an enclosing scope (like `start` in the `test` function) are inaccessible by default within inner functions. To access such a variable, you must declare it as `nonlocal`.
 
-#### Key Differences in default scope behavior
+#### Key Differences in Default Scope Behavior
 
 - **JavaScript**: Inner functions can read and modify variables from the outer function's scope without any additional declarations.
 - **Python**: You must use the `nonlocal` keyword in order to access variables from the enclosing scope within inner functions.

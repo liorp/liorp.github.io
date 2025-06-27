@@ -8,7 +8,7 @@ tags:
   - nginx
   - docker
   - mirror
-excerpt: "Mirror mirror on the wall, who am I talking to at all? 🪞"
+excerpt: "Mirror mirror on the wall, who am I talking to at all? 🦞"
 header:
   overlay_image: /assets/images/2023-05-11-mirroring-http-requests-with-nginx/city.png
   overlay_filter: 0.5
@@ -18,9 +18,9 @@ header:
       url: "https://github.com/liorp/mirroring-nginx"
 ---
 
-Using a staging environment for your website is considered a basic good practice today. In order for this environment to fully simulate the operational environment, we need to make sure that every HTTP request sent to the operational environment is mirrored to the staging environment. We also need that neither the stability nor failure of the staging environment will affect the original request, so that the end users will not ‘feel’ the mirroring at all.
+Using a staging environment for your website is considered a basic good practice today. In order for this environment to fully simulate the operational environment, we need to make sure that every HTTP request sent to the operational environment is mirrored to the staging environment. We also need to ensure that neither the stability nor failure of the staging environment will affect the original request, so that the end users will not 'feel' the mirroring at all.
 
-Fortunately, [Nginx](https://nginx.org) (my go-to webserver for production, which is also the number one server for the busiest websites in the world as of 2022) has a [built-in mirroring module](https://nginx.org/en/docs/http/ngx_http_mirror_module.html) that can accomplish this task without any third-party dependencies. In this article, we will learn how to use Nginx’s mirroring module to mirror HTTP requests from an operational environment to a staging environment. We will also explore how to test the mirroring configuration to ensure it works as expected.
+Fortunately, [Nginx](https://nginx.org) (my go-to webserver for production, which is also the number one server for the busiest websites in the world as of 2022) has a [built-in mirroring module](https://nginx.org/en/docs/http/ngx_http_mirror_module.html) that can accomplish this task without any third-party dependencies. In this article, we will learn how to use Nginx's mirroring module to mirror HTTP requests from an operational environment to a staging environment. We will also explore how to test the mirroring configuration to ensure it works as expected.
 
 ### Setup
 
@@ -72,7 +72,7 @@ app.listen(3001, () => {
 });
 ```
 
-Let's create a mirroring configuration for Nginx.
+Let's create a mirroring configuration for Nginx:
 
 ```conf
 worker_processes  5;
@@ -124,9 +124,11 @@ This configuration will mirror all HTTP requests coming to the `/` location at t
 
 Now, let's test our mirroring configuration.
 
-Create a Docker compose file to run the two servers with Nginx as a reverse proxy and mirroring activated.
+Create a Docker Compose file to run the two servers with Nginx as a reverse proxy and mirroring activated:
 
 ```docker
+docker-compose.yml
+
 services:
   operational:
     image: node:18
@@ -153,7 +155,7 @@ services:
       - staging
 ```
 
-Build and run the containers.
+Build and run the containers:
 
 ```bash
 docker compose up
@@ -161,7 +163,7 @@ docker compose up
 
 Accessing `localhost` should now return a response from the operational server, while in the logs you can see that the staging server also receives the request.
 
-```
+```bash
 curl http://localhost
 ```
 
@@ -171,9 +173,9 @@ This should return the following output:
 Hello, operational!
 ```
 
-Now, let's check the logs of the staging server.
+Now, let's check the logs of the staging server:
 
-```
+```bash
 docker logs nginx
 ```
 
@@ -195,7 +197,8 @@ As you can see, the staging server received a mirrored request, sent to the oper
 
 ### Testing for Failures
 
-Wait, we're not done just yet!  
+Wait, we're not done yet!
+
 We also want to test the mirroring configuration for failures. For this, we will create three servers:
 
 - A server with a long delay;
@@ -432,8 +435,8 @@ As in the `delay` server case, we can see that we're getting a lot of logs that 
 
 ### Conclusion
 
-Using Nginx’s built-in mirroring module is a simple and effective way to mirror HTTP requests from an operational environment to a staging environment. With the correct configuration, we can ensure that neither the stability nor failure of the staging environment will affect the original request, so that the end-users will not ‘feel’ the mirroring at all - yet we will be able to fully simulate the operational environment request load in the staging environment.
+Using Nginx's built-in mirroring module is a simple and effective way to mirror HTTP requests from an operational environment to a staging environment. With the correct configuration, we can ensure that neither the stability nor failure of the staging environment will affect the original request, so that the end-users will not 'feel' the mirroring at all - yet we will be able to fully simulate the operational environment request load in the staging environment.
 
-In this article, we have learned how to use Nginx’s mirroring module to mirror HTTP requests. We have also explored how to test the mirroring configuration to ensure it works as expected.
+In this article, we have learned how to use Nginx's mirroring module to mirror HTTP requests. We have also explored how to test the mirroring configuration to ensure it works as expected.
 
 Thanks to [Alex Dzyoba](https://alex.dzyoba.com/blog/nginx-mirror/) for the insipration to write this post!

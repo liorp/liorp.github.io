@@ -11,10 +11,12 @@ tags:
 excerpt: "Getting flexy with it"
 ---
 
-Hello, world! 
+Hello, world!
+
 For this first post, I'm going to write a few words about laying out SPAs with [Material-UI][material-ui].
 
-We start by taking their example:
+Let's start with their example:
+
 {% highlight react linenos %}
 {% raw %}
 import React from 'react';
@@ -202,8 +204,7 @@ export default function PersistentDrawerLeft() {
 {% endraw %}
 {% endhighlight %}
 
-Wait! What is that? ```position="fixed"```? ```marginLeft: drawerWidth```? Why can't it be [flex][flex-csstricks]🤩?  
-Let's spice it up a little bit:
+Wait! Why are we using `position="fixed"` and `marginLeft: drawerWidth`? Why not use [flex][flex-csstricks] instead? 🤩
 
 {% highlight react linenos %}
   appBar: {
@@ -255,10 +256,12 @@ Let's spice it up a little bit:
 {% endraw %}
 {% endhighlight %}
 
-The trick was to hide the *entire drawer*. But something in the animation is still not right:  
-![side-menu-slow-animation](/assets/images/2021-03-31-material-ui-drawer-flex-layout/side-menu-slow-animation.gif)  
+The trick is to hide the _entire drawer_ when it's closed. However, the animation still isn't quite right:
 
-*That's because we are not animating the drawer!*  
+![side-menu-slow-animation](/assets/images/2021-03-31-material-ui-drawer-flex-layout/side-menu-slow-animation.gif)
+
+_That's because we are not animating the drawer!_
+
 🛠 Let's add a transition to the drawer:
 {% highlight react linenos %}
 drawer: {
@@ -278,10 +281,18 @@ drawer: {
   },
 {% endhighlight %}
 
-And Voilà! A perfect animation:  
-![side-menu-slow-animation](/assets/images/2021-03-31-material-ui-drawer-flex-layout/side-menu-perfect-animation.gif)
+Voilà! Now the animation is perfect:
 
-The complete code is available [here][flex-layout-react-material-ui-drawer].
+![side-menu-perfect-animation](/assets/images/2021-03-31-material-ui-drawer-flex-layout/side-menu-perfect-animation.gif)
+
+---
+
+**Key takeaways:**
+
+- Use flex layouts for simpler, more maintainable code.
+- Animate both the drawer and the content for a smooth user experience.
+
+Check out the complete code on [GitHub][flex-layout-react-material-ui-drawer].
 
 [material-ui]: https://material-ui.com/
 [material-ui-drawer]: https://material-ui.com/components/drawers/
