@@ -13,7 +13,7 @@ tags:
 excerpt: "Creating the iconic dvd animation in React. Will it touch the corner?"
 ---
 
-# Intro
+## Intro
 
 A great web app is often measured by its easter eggs. Ever since [Moonlander (1973)][moonlander], easter eggs have gradually become more and more common in the software we write. And that's no surprise—over the years, it's gotten easier and easier to hide easter eggs in our code, and the bliss users have when they happen to wander upon such an egg is heavenly 👼
 
@@ -25,7 +25,7 @@ In fact, it is so popular that when you google "bouncing dvd logo", the Google l
 
 ---
 
-# Implementing
+## Implementing
 
 ![dvd-animation](/assets/images/2022-05-08-react-dvd-player-animation/dvd-animation.gif)
 

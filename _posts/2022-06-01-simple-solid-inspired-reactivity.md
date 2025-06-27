@@ -28,7 +28,7 @@ This is thanks to Solid's reactivity. But wait, what is reactivity?
 
 ---
 
-# Reactivity
+## Reactivity
 
 Well, in order to explain reactivity, first we need to remember how JS usually works. When we write something like:
 

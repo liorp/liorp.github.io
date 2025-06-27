@@ -12,7 +12,7 @@ tags:
 excerpt: "Before there was light, darkness was over the surface of the deep"
 ---
 
-# Let there be light 💡
+## Let there be light 💡
 
 As a kid, I learned a lot of environmental studies in my school (shout out to ["An Inconvenient Truth"][an-inconvenient-truth]).
 
@@ -24,7 +24,7 @@ Naturally, I thought it might be a fun [back-of-the-envelope][back-of-the-envelo
 
 ---
 
-# It all started with a switch 🎚️
+## It all started with a switch 🎚️
 
 I started by figuring out how much energy is needed to flip a switch. According to [this website][calories-switch-click]:
 

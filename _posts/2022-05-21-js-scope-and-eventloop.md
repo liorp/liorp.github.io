@@ -19,7 +19,7 @@ Recently, [a question of this kind][stackq] caught my eye; in essence, it seems 
 
 ---
 
-# The JavaScript scope
+## The JavaScript scope
 
 But what is the JavaScript [scope][jsscope]? Quoting from the holy bible of the web developer, the MDN:
 

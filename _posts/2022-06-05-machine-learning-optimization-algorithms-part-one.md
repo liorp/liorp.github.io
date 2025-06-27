@@ -22,7 +22,7 @@ In the next part, we implement the aforementioned algorithms, show simulations, 
 
 ---
 
-# Problem
+## Problem
 
 As machine learning evolves, a major subset of problems can be solved by these methods. In order to provide an efficient solution, optimization methods have become a paramount need.
 
