@@ -31,11 +31,11 @@ plugins:
 paginate: 10
 paginate_path: /page:num/
 
-# Navigation
-header_pages:
-  - _pages/blog.md
-  - _pages/about.md
-  - _pages/resume.md
+# Navigation - using custom _includes/header.html instead
+# header_pages:
+#   - _pages/blog.md
+#   - _pages/about.md
+#   - _pages/resume.md
 
 # Footer
 footer: >-
