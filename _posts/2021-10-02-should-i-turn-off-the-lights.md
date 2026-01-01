@@ -42,7 +42,7 @@ Furthermore, a traditional incandescent light bulb has a power of about 60 Watt,
 I've drawn a graph that shows the exact points at which leaving the light on becomes more expensive than turning off the light, in terms of energy (from left to right: LED, CFL, Halogen, Incandescent):
 
 <figure class="align-left">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2021-10-02-should-i-turn-off-the-lights/light-graph.png" alt="Efficiency of turning off the lights vs leaving the light open">
+  <img src="/assets/images/2021-10-02-should-i-turn-off-the-lights/light-graph.png" alt="Efficiency of turning off the lights vs leaving the light open">
   <figcaption>Efficiency of turning off the lights vs leaving the light open</figcaption>
 </figure>
 

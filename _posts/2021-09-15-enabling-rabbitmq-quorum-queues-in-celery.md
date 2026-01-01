@@ -22,7 +22,7 @@ You have publishers that publish tasks, subscribers that consume messages, and a
 This is called work queues, as illustrated here (one publisher and many consumers, from RabbitMQ's official docs):
 
 <figure class="align-left">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2021-09-15-enabling-rabbitmq-quorum-queues-in-celery/rabbitmq-work-queue.png" alt="RabbitMQ work queues">
+  <img src="/assets/images/2021-09-15-enabling-rabbitmq-quorum-queues-in-celery/rabbitmq-work-queue.png" alt="RabbitMQ work queues">
   <figcaption>RabbitMQ work queues</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ Well, apparently [they are not supported out of the box][celery-quorum-ticket] i
 If you follow the celery instructions and naively define a queue with type quorum, you'll actually get an `amqp.exceptions.AMQPNotImplementedError: Basic.consume: (540) NOT_IMPLEMENTED - queue 'add_queue' in vhost '/' does not support global qos` 😵
 
 <figure class="align-left">
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2021-09-15-enabling-rabbitmq-quorum-queues-in-celery/celery-global-qos-error.png" alt='Getting a really nasty error when forcing queue_arguments={"x-queue-type": "quorum"}'>
+  <img src="/assets/images/2021-09-15-enabling-rabbitmq-quorum-queues-in-celery/celery-global-qos-error.png" alt='Getting a really nasty error when forcing queue_arguments={"x-queue-type": "quorum"}'>
   <figcaption>Getting a really nasty error when forcing <code>queue_arguments={"x-queue-type": "quorum"}</code></figcaption>
 </figure>
 

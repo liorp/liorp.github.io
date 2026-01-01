@@ -49,21 +49,21 @@ $$ \#green+\#red \choose \#green \\ $$
 
 Of course, we need to sum this over the possible configurations, and so we end up with the following formula for the number of available possible arrangements:
 
-$$ \#Arrangements = \sum\limits\_{i=0}^{6} {12-i \choose i} = 233 \\ $$
+$$ \#Arrangements = \sum\limits_{i=0}^{6} {12-i \choose i} = 233 \\ $$
 
 This can also be generalized to the case where we have $$n$$ éclairs in total:[^2]
 
-$$ a*{n+1} = \sum\limits*{i\geq0}^{} {n-i \choose i} \\ $$
+$$ a_{n+1} = \sum\limits_{i\geq0}^{} {n-i \choose i} \\ $$
 
 The solution given in the tweet is a bit more elegant, in my opinion. In essence, it decomposes the problem recursively to the number of available arrangements for fewer brownies. It all boils down to the well-known formula for Fibonacci numbers:
 
-$$ a*{n+1} = a*{n} + a\_{n-1} \\ $$
+$$ a_{n+1} = a_{n} + a_{n-1} \\ $$
 
 where $$a_{n+1}$$ is the number of possible arrangements for $$n+1$$ brownies.
 
 Thus, we can actually deduce the following formula for Fibonacci numbers:
 
-$$ \frac{1}{\sqrt{5}}\left[\left(\frac{1+\sqrt{5}}{2}\right)^{n+1} -\left(\frac{1-\sqrt{5}}{2}\right)^{n+1}\right] = a*{n} + a*{n-1} = a*{n+1} = \sum\limits*{i\geq0}^{} {n-i \choose i} \\ $$
+$$ \frac{1}{\sqrt{5}}\left[\left(\frac{1+\sqrt{5}}{2}\right)^{n+1} -\left(\frac{1-\sqrt{5}}{2}\right)^{n+1}\right] = a_{n} + a_{n-1} = a_{n+1} = \sum\limits_{i\geq0}^{} {n-i \choose i} \\ $$
 
 ---
 

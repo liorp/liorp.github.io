@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+{%- comment -%}
+  Build a practical CSP. Extended to allow MathJax, YouTube embeds, and Twitter widgets.
+{%- endcomment -%}
+{%- capture csp -%}
+default-src 'none';
+connect-src 'self';
+base-uri 'self';
+form-action 'none';
+img-src 'self' https: data:;
+style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+font-src 'self' https://fonts.gstatic.com data:;
+media-src 'self';
+object-src 'none';
+child-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://platform.twitter.com https://stackblitz.com;
+frame-src 'self' https://www.youtube-nocookie.com https://www.youtube.com https://platform.twitter.com https://stackblitz.com;
+script-src 'self' https://cdn.jsdelivr.net https://platform.twitter.com 'unsafe-inline';
+{%- endcapture -%}
+{%- capture csp_final -%}{{ csp | strip | replace: '\n', ' ' }} {%- if site.csp_extra %} {{ site.csp_extra }}{%- endif -%}{%- endcapture -%}
+<meta http-equiv="Content-Security-Policy" content="{{ csp_final | strip }}" />
+<meta http-equiv="X-XSS-Protection"  content="1;mode=block" always>
+<meta http-equiv="Referrer-Policy" content="no-referrer, strict-origin-when-cross-origin">
+
+  {%- include head.html -%}
+
+  <!-- MathJax for LaTeX rendering -->
+  <script>
+  MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)'], ['$', '$']],
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],
+    },
+    svg: {
+      fontCache: 'global'
+    }
+  };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+  </script>
+
+  <body>
+    <div class="container">
+
+      {%- include header.html -%}
+
+    <main>
+      {{ content }}
+    </main>
+
+    {%- include footer.html -%}
+
+    </div>
+  </body>
+</html>

@@ -40,28 +40,28 @@ A "set" is made up of three cards where, for each of the four features, the card
 
 #### Finite Geometry and Vector Spaces
 
-The game's mathematical foundation comes from **finite geometry**. The 81 cards can be thought of as points in a four-dimensional vector space over the finite field $$ \mathbb{Z}\_{3} $$, where each feature represents one dimension. In this space:
+The game's mathematical foundation comes from **finite geometry**. The 81 cards can be thought of as points in a four-dimensional vector space over the finite field $$ \mathbb{Z}_{3} $$, where each feature represents one dimension. In this space:
 
 - The sum of each feature over all cards is zero.
 
-Each feature in Set can take one of three values, which can be represented by $$ \{0, 1, 2\} $$ in the finite field $$ \mathbb{Z}\_3 $$. Let's assume a "set", that is a collection of three cards, where each feature has the same value, or all three features have different values.
+Each feature in Set can take one of three values, which can be represented by $$ \{0, 1, 2\} $$ in the finite field $$ \mathbb{Z}_3 $$. Let's assume a "set", that is a collection of three cards, where each feature has the same value, or all three features have different values.
 
-- The case of all three features having the same value is easy to understand. For example, if all three cards have the same shape, then the sum of the shape feature over all three cards is 0 in $$ \mathbb{Z}\_3 $$, since $$ 3 \cdot x \equiv 0 \mod 3 $$.
-- The case of all three features having different values is a bit more complex. For example, if the first card has an oval shape, the second card has a squiggle, and the third card has a diamond, then the sum of the shape feature over all three cards is 0 in $$ \mathbb{Z}\_3 $$, since $$ 1 + 2 + 0 \equiv 3 \equiv 0 \mod 3 $$.
+- The case of all three features having the same value is easy to understand. For example, if all three cards have the same shape, then the sum of the shape feature over all three cards is 0 in $$ \mathbb{Z}_3 $$, since $$ 3 \cdot x \equiv 0 \mod 3 $$.
+- The case of all three features having different values is a bit more complex. For example, if the first card has an oval shape, the second card has a squiggle, and the third card has a diamond, then the sum of the shape feature over all three cards is 0 in $$ \mathbb{Z}_3 $$, since $$ 1 + 2 + 0 \equiv 3 \equiv 0 \mod 3 $$.
 
 A "set" of three cards corresponds to a line within this space.
 
-As we have just seen, for three cards represented by vectors $$ \mathbf{v}\_1 $$, $$ \mathbf{v}\_2 $$, and $$ \mathbf{v}\_3 $$, the condition for a "set" is:
+As we have just seen, for three cards represented by vectors $$ \mathbf{v}_1 $$, $$ \mathbf{v}_2 $$, and $$ \mathbf{v}_3 $$, the condition for a "set" is:
 
-$$ \mathbf{v}\_1 + \mathbf{v}\_2 + \mathbf{v}\_3 \equiv 0 \mod 3 $$.
+$$ \mathbf{v}_1 + \mathbf{v}_2 + \mathbf{v}_3 \equiv 0 \mod 3 $$.
 
 This condition implies:
 
-- $$ \mathbf{v}\_1 + \mathbf{v}\_2 \equiv -\mathbf{v}\_3 \mod 3 $$
-- By adding $$ \mathbf{v}\_2 $$ to both sides: $$ \mathbf{v}\_1 + 2\cdot\mathbf{v}\_2 \equiv \mathbf{v}\_2 - \mathbf{v}\_3 \mod 3 $$
-- Of course, $$ 2\cdot\mathbf{v}\_2 = -\mathbf{v}\_2 \mod 3 $$, so $$ \mathbf{v}\_1 - \mathbf{v}\_2 \equiv \mathbf{v}\_2 - \mathbf{v}\_3 \mod 3 $$
+- $$ \mathbf{v}_1 + \mathbf{v}_2 \equiv -\mathbf{v}_3 \mod 3 $$
+- By adding $$ \mathbf{v}_2 $$ to both sides: $$ \mathbf{v}_1 + 2\cdot\mathbf{v}_2 \equiv \mathbf{v}_2 - \mathbf{v}_3 \mod 3 $$
+- Of course, $$ 2\cdot\mathbf{v}_2 = -\mathbf{v}_2 \mod 3 $$, so $$ \mathbf{v}_1 - \mathbf{v}_2 \equiv \mathbf{v}_2 - \mathbf{v}_3 \mod 3 $$
 
-This shows that $$ \mathbf{v}\_1 $$, $$ \mathbf{v}\_2 $$, and $$ \mathbf{v}\_3 $$ lie on the same line in the 4-dimensional space. Therefore, a "set" corresponds to a line in the affine space $$ \mathbb{Z}\_3^4 $$.
+This shows that $$ \mathbf{v}_1 $$, $$ \mathbf{v}_2 $$, and $$ \mathbf{v}_3 $$ lie on the same line in the 4-dimensional space. Therefore, a "set" corresponds to a line in the affine space $$ \mathbb{Z}_3^4 $$.
 
 - The number of unique sets is 1,080.
 
