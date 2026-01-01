@@ -24,6 +24,18 @@ script-src 'self' https://cdn.jsdelivr.net https://platform.twitter.com 'unsafe-
 
   {%- include head.html -%}
 
+  <!-- Custom mobile spacing fixes -->
+  <style>
+    @media only screen and (max-width: 500px) {
+      header {
+        margin-top: 10px;
+      }
+      footer {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+
   <!-- MathJax for LaTeX rendering -->
   <script>
   MathJax = {
