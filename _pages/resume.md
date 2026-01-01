@@ -1,52 +1,63 @@
 ---
+layout: page
+title: /resume
 permalink: /resume/
-date: 2022-11-26T17:11:00+02:00
-title: "Resume"
-author_profile: true
 ---
 
-## PROJECTS
+```bash
+$ cat resume.txt
+```
 
-See [liorp.dev](https://liorp.dev)
+## SUMMARY
+
+Building at the intersection of AI and software engineering.
+
+I specialize in scalable systems - from microservices architecture to ML pipelines.
+
+Open source contributor. Problem solver. Lifelong learner.
 
 ## EXPERIENCE
 
-### 2016 – 2018 Chief iOS Developer at iStudent
+<b>2023 – 2025 | Fullstack Engineer | Sweet Security</b>
 
-I was in charge of the iOS version of iStudent app for students. This app gives discounts for students at many places throughout Israel.
+At Sweet Security, a CNAPP cybersecurity startup, I played a leading role in building core platform capabilities:
 
-### 2016 – 2017 Chief Digital Officer at Bar Ilan University’s Students’ Association
+- Led frontend modernization, migrating the entire codebase to Vite + React 19, improving build times from minutes to seconds
+- Built integration services from scratch to major SIEM and tools including Splunk, Jira, Microsoft Sentinel, AWS Security Hub, Microsoft Teams, and Slack, parsing 3K messages per second in Kafka queues
+- Led a real-time cloud inventory feature showing Kubernetes assets and relationships, improving visibility for DevSecOps teams
+- Migrated backend data layer from MongoDB to Elasticsearch, designing a reusable DAL and controller utilities
+- Created a CISO-facing dashboard providing visual insights into cloud security posture
+- Onboarded and mentored new engineers, contributing to team growth and code quality
 
-I was in charge of the new website and IT of Bar Ilan University’s Students’ Association.
-I developed a new system for dispersing gifts using PHP.
+<b>2016 – 2018 | Chief iOS Developer | iStudent</b>
 
-### From 2012 – Developing apps, contributing to open source projects
+<b>2016 – 2017 | Chief Digital Officer | Bar Ilan University's Students' Association</b>
 
-- Several open source projects that I contributed to include splunk_handler, tendo and boardgame.io.
-- Several open source projects that I created include eager_cache, react-dvd-player-animation, pysteg, cmprsr, and milan.
-- Doryt is a third-party app I made. It helps the students of Bar Ilan University to know their grades and test schedule, among other academic matters.
-- Ohel-Shem is an app I made for my high school, as part of my role on the website team. It helps the students to know their timetable and test schedule, among other academic matters.
-- Evade is a game I made, in which the main objective is to dodge shapes.
-- During the summer of 2012, I developed my first app for iOS- TaleMe. This game is an implementation of social storytelling for iOS.
+<b>2012 – Now | Open Source & Freelance</b>
+
+Independently developed apps and contributed to open source.
+
+- Contributions: splunk_handler, tendo, boardgame.io
+- Creations: eager_cache, react-dvd-player-animation, pysteg, cmprsr, milan
+- Apps: Doryt, Ohel-Shem, Evade, TaleMe
 
 ## EDUCATION
 
-### 2017 – 2023 Bar Ilan University
+<b>2017 – 2023 | Bar Ilan University</b>
+M.Sc. in Mathematics (Excellence Program), with thesis, Cum Laude
 
-M.Sc. degree in Mathematics (Excellence Program), with thesis, Cum Laude
-
-### 2014 – 2017 Bar Ilan University
-
-B.Sc. degree in Mathematics and Physics (Combined), Cum Laude
+<b>2014 – 2017 | Bar Ilan University</b>
+B.Sc. in Mathematics and Physics (Combined), Cum Laude
 
 ## SKILLS
 
-- Programming with Python (speciality in Django and DRF), and JavaScript (React). I used to know some Objective-C, Swift, and C, but I am not quite fluent in them now.
-- Familiarity with CI/CD processes and work procedures in Kubernetes and Docker environments. I've converted projects to a full Helm architecture.
-- Fluent in English.
+- <b>Languages & Frameworks:</b> Python (Django, DRF), JavaScript, TypeScript (React)
+- <b>DevOps & Infrastructure:</b> CI/CD, Docker, Kubernetes, Kafka, MongoDB, Git
+- <b>Cloud & Integrations:</b> AWS, Elasticsearch, SIEM tools
 
 ## ACCOLADES
 
-- Academic excellence, Mathematics Department, Bar Ilan University, 2014-7
-- Academic excellence, Physics Department, Bar Ilan University, 2015, 2016
-- First and second places in “Bikurei Yetzira” (Literary work contest), Ramat Gan City, 2015-6
+- Academic Excellence, Bar Ilan University (Mathematics, Physics) - multiple years
+- Academic Excellence, Ohel Shem High School, 2013 - 2015
+- 1st & 2nd place, "Bikurei Yetzira" (Literary Contest), Ramat Gan, 2015 - 2016
+- Second place in TIMEMUN, WBAIS High School, 2014

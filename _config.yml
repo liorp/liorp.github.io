@@ -1,138 +1,79 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Lior Pollak
-title_separator: |
-name: Lior Pollak
+title: liorp@blog:~$
+name: liorp
 email: liorp at me dot com
-description: >- # this means to ignore newlines until "baseurl:"
-  Some python, js, react, django, fullstack, and the occasional math and science.
-twitter_username: liorp
-github_username: liorpollak
-minimal_mistakes_skin: sunrise
-search: true
-analytics:
-  provider: google
-  google:
-    tracking_id: UA-193470211-1
-    anonymize_ip: true
-encoding: UTF-8
-github: [metadata]
+description: >-
+  Fullstack developer. Python, JS, React, Django. Math & physics enthusiast.
+baseurl: ""
+url: "https://blog.liorp.dev"
+
+# Theme
+remote_theme: b2a3e8/jekyll-theme-console
+style: hacker
+listen_for_clients_preferred_style: false
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
-# Outputting
+encoding: UTF-8
+timezone: Asia/Tel_Aviv
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: Asia/Tel_Aviv # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-repository: liorp/liorp.github.io
-future: true
-livereload: true
 
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-remote-theme
+
+# Pagination
+paginate: 10
+paginate_path: /page:num/
+
+# Navigation
+header_pages:
+  - _pages/blog.md
+  - _pages/about.md
+  - _pages/resume.md
+
+# Footer
+footer: >-
+  <a href="https://github.com/liorp">github</a> |
+  <a href="https://twitter.com/liorpollak">twitter</a> |
+  <a href="https://www.linkedin.com/in/lior-pollak-0b039170">linkedin</a>
+
+# SEO
+author: liorp
+twitter:
+  username: liorpollak
+social:
+  name: liorp
+  links:
+    - https://twitter.com/liorpollak
+    - https://github.com/liorp
+    - https://www.linkedin.com/in/lior-pollak-0b039170
+
+# Analytics (optional - uncomment to enable)
+# tracking:
+#   script_src:
+#     - "https://www.googletagmanager.com/gtag/js?id=UA-193470211-1"
+#   async: true
+
+# Comments disabled (utterances not supported by this theme)
+
+# Include pages
 include:
   - _pages
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
-
-# Plugins (previously gems:)
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
-  - jekyll-mermaid
-
-mermaid:
-  src: "/assets/js/mermaid.js"
-
-author:
-  name: "Lior Pollak"
-  avatar: "/assets/images/profile_mini.webp"
-  bio: "Fullstack & math. Also some physics."
-  links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://blog.liorp.dev/"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/liorpollak"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/liorp"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/lior-pollak-0b039170"
-
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/liorpollak"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/liorp"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/lior-pollak-0b039170"
-
+# Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
     values:
-      layout: single
-      author_profile: false
-      read_time: true
-      show_date: true
-      comments: true
-      share: true
-      related: true
-      header:
-        overlay_color: "#333"
-  # _pages
+      layout: post
   - scope:
       path: "_pages"
       type: pages
     values:
-      layout: single
-      author_profile: false
-
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-comments:
-  provider: "utterances"
-  utterances:
-    theme: "github-dark"
-    issue_term: "pathname"
-    label: "comment"
+      layout: page
