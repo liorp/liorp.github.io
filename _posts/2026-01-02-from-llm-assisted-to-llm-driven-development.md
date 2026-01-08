@@ -52,8 +52,7 @@ If agents continue to improve - and there's no reason to think they won't - I se
 
 The **chariot stage** is already behind us. That was early adoption: reviewing every diff manually, lightweight verification (CLAUDE.md files, linting rules, pre-commit hooks). Speed already left every human developer in the dust, but you stayed close to the ground, handling mistakes and debugging yourself.
 
-Now we're in the **car stage**. Speed has increased significantly. Agents navigate more independently while you set the destination. Y
-ou review with other agents, make them debug failures, intervening at critical points rather than inspecting every line. CI/CD pipelines aren't optional - they're load-bearing infrastructure. Automated testing, integration checks before any merge. 
+Now we're in the **car stage**. Speed has increased significantly. Agents navigate more independently while you set the destination. You review with other agents, make them debug failures, intervening at critical points rather than inspecting every line. CI/CD pipelines aren't optional - they're load-bearing infrastructure. Automated testing, integration checks before any merge. 
 You trust the pavement but still need to know when to brake.
 
 Eventually, the **airplane stage** arrives. Speed is orders of magnitude higher. Autonomy is near-complete - driven by a single prompt, agents write, debate, improve, and execute complex flight plans with minimal intervention. Stakes become existential: production systems, financial software, medical devices. Verification requires redundancy at every layer: multiple verification systems, rollback mechanisms, orchestration layers coordinating agents in formation. 
