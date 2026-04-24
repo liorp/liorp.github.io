@@ -43,7 +43,7 @@ Agents dissolve that tradeoff. They're not assistants you delegate to. They're m
 
 The best analogy I have: agents are the warmth in the kitchen, not the chef. I'm still the one who decides what's on the menu, who tastes everything, who says "this isn't ready" or "kill this dish entirely." They do the stirring that keeps the sauce from breaking, the basting that keeps the roast from drying out, the quiet maintenance work that keeps a dish alive between the moments I'm actually standing over it. You see, a chef without warmth is still a chef. Warmth without a chef is just a fire hazard. So  actually I haven't started from zero in months - there's always something warm to pick up.
 
-## The Quiet Confidence of a Warm Kitchen
+---
 
 I think the reason this matters, beyond just getting more done, is psychological. When you're always mid-creation, your relationship to ideas changes. New ideas don't feel threatening, because there's always an open burner. Shipping doesn't feel precious, because another dish is right behind it. Even failure feels different. A dish that doesn't work out just becomes compost for the next one. You stop white-knuckling every project, because your identity isn't riding on any single thing.
 
