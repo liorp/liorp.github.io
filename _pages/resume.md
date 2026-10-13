@@ -10,15 +10,23 @@ $ cat resume.txt
 
 ## SUMMARY
 
-Building at the intersection of AI and software engineering.
+CTO, entrepreneur and builder. Solving great problems with even greater tools.
 
-I specialize in scalable systems - from microservices architecture to ML pipelines.
+I specialize in scalable systems and AI-native development - from microservices architecture to agentic workflows.
 
 Open source contributor. Problem solver. Lifelong learner.
 
 ## EXPERIENCE
 
-<b>2023 – 2025 | Fullstack Engineer | Sweet Security</b>
+<b>2026 – Now | Cofounder & CTO | Stealth</b>
+
+<b>2025 – 2026 | Senior Software Engineer | Wonderful</b>
+
+<b>2025 – 2026 | Cofounder & CEO | heyfitt</b>
+
+Turned my own struggle for consistency into an AI coach that keeps you on track every day - built with Claude Code and Codex as the other cofounders.
+
+<b>2023 – 2025 | Senior Software Engineer | Sweet Security</b>
 
 At Sweet Security, a CNAPP cybersecurity startup, I played a leading role in building core platform capabilities:
 
@@ -54,6 +62,7 @@ B.Sc. in Mathematics and Physics (Combined), Cum Laude
 - <b>Languages & Frameworks:</b> Python (Django, DRF), JavaScript, TypeScript (React)
 - <b>DevOps & Infrastructure:</b> CI/CD, Docker, Kubernetes, Kafka, MongoDB, Git
 - <b>Cloud & Integrations:</b> AWS, Elasticsearch, SIEM tools
+- <b>AI & Agents:</b> Claude Code, Codex, multi-agent workflows, subagents & skills
 
 ## ACCOLADES
 
